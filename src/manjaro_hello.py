@@ -262,7 +262,7 @@ class Hello(Gtk.Window):
             "label": {
                 "autostartlabel",
                 "development",
-                "discover",
+                "software",
                 "donate",
                 "firstcategory",
                 "forum",
@@ -281,7 +281,7 @@ class Hello(Gtk.Window):
             "tooltip_text": {
                 "about",
                 "development",
-                "discover",
+                "software",
                 "donate",
                 "forum",
                 "mailling",

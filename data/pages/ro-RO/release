@@ -1,23 +1,25 @@
-<big>Manjaro 21.3</big>
+<big>Manjaro 22.0</big>
 
-Since we released Qonos end of last year all our developer teams worked hard to get the next release of Manjaro out there. We call it Ruah.
+Since we released Ruah in June all our developer teams worked hard to get the next release of Manjaro out there. We call it Sikaris.
 
-This release features the final release of Calamares v3.2. Partition module gained more support for LUKS partitions. Users module now has lists of forbidden login- and host-names, to avoid settings that will mess up the install.
+The <big>GNOME edition</big> has received a major update to Gnome 43. It comes with a redesigned system status menu, which allows quickly changing commonly used settings. Settings which previously required digging into menus can now be changed with the click of button. The new design also makes it easy to see the status of your settings at a glance.
 
-The <big>GNOME edition</big> has received a major update to Gnome 42. A new global dark UI style preference has arrived. This can be used to request that apps use a dark UI style instead of light. The new setting can be found in the new Appearance panel in the Settings app, and is followed by most GNOME apps.
+Our in-house Layouts Switcher application has gained some new features as well as various improvements and fixes: Now you can create your own dynamic wallpaper. With Gradience you can customize your theme simple from within the application. There are many presents available to choose from or you can create your own. By toggling a radio button the Firefox Gnome theme can fetch its latest version automatically from upstream.
 
-GTK 4 and libadwaita provide next generation capabilities for GNOME applications, and many GNOME apps have started to use these components for GNOME 42. As a result, these apps have better performance, a new modern UI style, and new user interface elements.
+Additionally we managed to get our green branding back. Therefore we created some Gnome packages we tagged with Maia. This includes accent colours, colouring on the login screen, folder clours and Qt theming.
 
-GNOME 42 includes a valuable set of performance improvements, as the GNOME community continues its work to enhance system speed and resource usage.
+The <big>Plasma edition</big> comes with the latest Plasma 5.26 series and KDE Gear 22.12. Even with a bare-bones installation, Plasma lets you customize your desktop a lot. If you want more, there is always Plasma's vast ecosystem of widgets. Addons, widgets, plasmoids... They all refer to the same thing. The clock and calendar in your panel, the notifier, your KDE Connect monitor, the volume control; these are all widgets, and all can be added elsewhere, moved around, removed and, in true Plasma fashion, modified to an extreme degree.
 
-The <big>Plasma edition</big> comes with the latest Plasma 5.24 series. Plasma is all about customization, and we have worked on making the process clear and simple so you can adapt your environment exactly to how you like it.
+On your Workspaces it is now not only the windows decorations that change when you move from a light theme to a dark theme: the wallpaper will change as well! Talking of light and dark, you have been able to adjust the warmth of the colors of your desktop for some time now, using warmer, reddish colors at night (better for your eyes) and having Plasma adjust the color automatically when the sun goes down and now you can now do that for the day time too.
 
-Desktop Panels are now easier to move around and stick to any edge you want, as you can now drag them from anywhere on their toolbar while in Edit Mode. You can better leverage the power of multiple desktops in Plasma 5.24 with the new Overview effect, which is much similar to how GNOME Overview works. This allows you to get a view of different workspaces, interact with all the various windows and applications you have open in the background and the ability to search your system too. 
+Dolphin, the file manager, adds a new feature called Selection Mode: Hit the spacebar and a light green bar will appear at the top of the file view. You can now click or tap files and folders and quickly and easily select the ones you want to work with. When you want to reply to a text message using the KDE Connect widget, the text field is now inline rather than in a separate dialog window, making it more convenient to answer when working on your computer.
 
-Now it’s easy to become a KRunner whiz: click on the question mark icon on the toolbar and KRunner will show a list of available plugins and how to use them. Click on a plugin from the list and you’ll see all the information you need to use it to its fullest.
+With our <big>XFCE edition</big>, we have now Xfce 4.18. Here some highlights: A new file highlighting feature (accessed from the file properties dialog) in Thunar file manager lets you set a custom colour background and a custom foreground text colour – an effective way to call attention to specific file(s) in a directory laden with similar-looking mime types. On the subject of finding files, Thunar includes recursive search.
 
-With our <big>XFCE edition</big>, we have now Xfce 4.16. The window manager received lots of updates and improvements again in the area of compositing and GLX. Support for fractional scaling was added to the display dialog, along with highlighting the preferred mode of a display with an asterisk and adding aspect ratios next to resolutions. The settings manager has improved search and filter capabilities. Thunar file manager received a boatload of fixes and quite a few notable features, including pause for copy/move operations, support for queued file transfer, remembering view settings per directory and support for transparency in Gtk themes.
+The panel picks up a pair of new preferences. First, panel length is now configured in pixels rather than percentages, as before. Second, there’s a new “keep panel above windows” option. This allows maximised app windows to fill the area behind the panel rather than maximise its bottom or top edge to sit flush against it.
 
-Kernel 5.15 LTS is used for this release, such as the latest drivers available to date. With 5.4 LTS and 5.10 LTS we offer additional support for older hardware as needed.
+Control Centre groups all of the desktop’s various modules for managing the system into one easy-to-use window. New options are present in many of these. For example you can disable header bars in dialogs from the Appearance module; show or hide a ‘delete’ option in file context menus from Desktop; and pick a default multi-monitor behaviour before you attach an additional screen – dead handy, that. 
 
-We hope you enjoy this release and let us know what you think of Ruah.
+Kernel 6.1 is used for this release, such as the latest drivers available to date. With 5.15 LTS and 5.10 LTS we offer additional support for older hardware as needed.
+
+We hope you enjoy this release and let us know what you think of Sikaris.

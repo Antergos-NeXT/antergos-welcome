@@ -12,9 +12,9 @@ Our in-house Layouts Switcher application has gained some new features as well a
 
 Additionally we managed to get our green branding back. Therefore we created some Gnome packages we tagged with Maia. This includes accent colours, colouring on the login screen, folder clours and Qt theming.
 
-The <big>Plasma edition</big> comes with the latest Plasma 5.27 LTS series and KDE Gear 22.12. It brings exciting new improvements to your desktop. The first thing you'll notice after installing Plasma is the easy-to-follow welcome wizard. It can help you connect to the Internet, learn about Plasma's features and how to tweak settings, install new software, and more.
+The <big>Plasma edition</big> comes with the latest Plasma 5.27 LTS series and KDE Gear 22.12. It brings exciting new improvements to your desktop.
 
-Other big new features include a window tiling system, a more stylish app theme, cleaner and more usable tools, and widgets that give you more control over your machine. KDE's designers have been hard at work reducing the number of pages in Plasma's System Settings utility and moving smaller options in with other settings. Such is the case of the configuration for the animation when apps are launching, which now lives on the Cursors page. Additionally, the Highlight Changed Settings button has been moved to the hamburger menu for a cleaner look.
+This release includes a window tiling system, a more stylish app theme, cleaner and more usable tools, and widgets that give you more control over your machine. KDE's designers have been hard at work reducing the number of pages in Plasma's System Settings utility and moving smaller options in with other settings. Such is the case of the configuration for the animation when apps are launching, which now lives on the Cursors page. Additionally, the Highlight Changed Settings button has been moved to the hamburger menu for a cleaner look.
 
 Migrating Plasma to the new Wayland display server technology has been no mean feat. But despite how hard the work has been, it is paying off, as Wayland opens many new ways to interact with your desktop. Plasma 5.27's Wayland support is better than ever, with many bug fixes and reliability improvements throughout!
 

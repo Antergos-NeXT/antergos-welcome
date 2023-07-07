@@ -450,15 +450,15 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="spacing">10</property>
                 <child>
                   <object class="GtkEventBox">
-                    <property name="name">telegram</property>
+                    <property name="name">youtube</property>
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <signal name="button-press-event" handler="on_link_clicked" swapped="no"/>
                     <child>
-                      <object class="GtkImage" id="telegram">
+                      <object class="GtkImage" id="youtube">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="tooltip-text">Telegram</property>
+                        <property name="tooltip-text">Youtube</property>
                       </object>
                     </child>
                   </object>

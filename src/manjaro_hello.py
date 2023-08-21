@@ -33,12 +33,6 @@ class EmbedManager:
     def display(self, window: Gtk.Window):
         for app in self.apps:
             app.display(window)
-            if app.loaded:
-                btn = window.builder.get_object(app.name)
-                if self.count < 2:
-                    btn.set_margin_start(200)
-                    btn.set_margin_end(200)
-                #TODO if self.count>2 !!! ???
 
 
 class Embed:
@@ -214,6 +208,14 @@ class Hello(Gtk.Window):
             manager = EmbedManager(EmbedBrowser(), EmbedLayouts())
             manager.get_modules(self)
             manager.display(self)
+            de = os.environ.get("DESKTOP_SESSION", "unknown")
+
+            if de == "plasma" and os.path.isfile(self.preferences["plasmawelcome_path"]):
+                self.builder.get_object("deWelcome").set_visible(True)
+                self.builder.get_object("deWelcome").set_label("Plasma Welcome")
+            elif de == "gnome" and os.path.isfile(self.preferences["gnometour_path"]):
+                self.builder.get_object("deWelcome").set_visible(True)
+                self.builder.get_object("deWelcome").set_label("GNOME Tour")
 
         self.window.show()
 
@@ -363,6 +365,14 @@ class Hello(Gtk.Window):
             dialog = self.builder.get_object("aboutdialog")
             dialog.run()
             dialog.hide()
+        elif name == "deWelcome":
+            de = os.environ.get("DESKTOP_SESSION", "unknown")
+
+            if de == "plasma":
+                 subprocess.Popen(["plasma-welcome"])
+            elif de == "gnome":
+                subprocess.Popen(["gnome-tour"])
+
 
     def on_btn_clicked(self, btn):
         """Event for applications button."""

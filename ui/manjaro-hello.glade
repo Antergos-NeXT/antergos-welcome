@@ -458,7 +458,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                       <object class="GtkImage" id="youtube">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="tooltip-text">Youtube</property>
+                        <property name="tooltip-text">YouTube</property>
                       </object>
                     </child>
                   </object>

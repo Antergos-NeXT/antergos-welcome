@@ -1,22 +1,24 @@
-<big>Manjaro 22.1</big>
+<big>Manjaro 23.0</big>
 
-Since we released Sikaris in December 2022 we worked hard to get the next release of Manjaro out there. We call it Talos.
+Since we released Talos in April 2023 we worked hard to get the next release of Manjaro out there. We call it Uranos.
 
-The <big>GNOME edition</big> has received several updates to Gnome 43 series. This includes a lot of fixes and polish when Gnome 43 originally was released in September 2022. You can find the changes made to each point-release here: <a href="https://download.gnome.org/core/43/43.1/NEWS">43.1</a>, <a href="https://download.gnome.org/core/43/43.2/NEWS">43.2</a>, <a href="https://download.gnome.org/core/43/43.3/NEWS">43.3</a>, <a href="https://download.gnome.org/core/43/43.4/NEWS">43.4</a>, <a href="https://download.gnome.org/core/43/43.5/NEWS">43.5</a>.
+The <big>GNOME edition</big> has received several updates to Gnome 44 series. This includes a lot of fixes and polish when <a href="https://release.gnome.org/44/">Gnome 44</a> originally was released in March 2023. You can find the changes made to each point-release here: <a href="https://download.gnome.org/core/44/44.1/NEWS">44.1</a>, <a href="https://download.gnome.org/core/44/44.2/NEWS">44.2</a>, <a href="https://download.gnome.org/core/44/44.3/NEWS">44.3</a>, <a href="https://download.gnome.org/core/44/44.4/NEWS">44.4</a>.
 
-Highlights of 43 release series is:
+Highlights of 44 release series is:
 
-It comes with a redesigned system status menu, which allows quickly changing commonly used settings. Settings which previously required digging into menus can now be changed with the click of button. The new design also makes it easy to see the status of your settings at a glance. 
+GNOME’s file chooser dialogs have only ever had a list view, which is great when you want to pick a file based on its name, but isn’t so good when picking files based on their thumbnails. Over the years, GNOME users have therefore repeatedly requested that a grid view be added to the file chooser. This has been one of the most positively received changes in our history, so we are confident that people will like it added in this release cycle!
 
-Our in-house Layouts Switcher application has gained some new features as well as various improvements and fixes: Now you can create your own dynamic wallpaper. With Gradience you can customize your theme simple from within the application. There are many presents available to choose from or you can create your own. By toggling a radio button the Firefox Gnome theme can fetch its latest version automatically from upstream.
+GNOME’s accessibility settings have been redesigned for GNOME 44. The different sections of settings are now split up, to make them easier to navigate. The design of individual settings has also been improved, to be clearer and more consistent with the rest of settings. Additionally, many settings have had descriptions added. Mouse & Touchpad settings have been reworked for GNOME 44. The most noticeable change is the addition of videos which demonstrate the different available options. Not only do these look great, but they also make the various settings easier to understand.
 
-Additionally we managed to get our green branding back. Therefore we created some Gnome packages we tagged with Maia. This includes accent colours, colouring on the login screen, folder clours and Qt theming.
+Lastly, Software in GNOME 44 offers a smoother and faster experience. The pages for each software category are now displayed more quickly, so you can browse with less interruption. Reloading of pages has also been reduced.
 
-The <big>Plasma edition</big> comes with the latest Plasma 5.27 LTS series and KDE Gear 22.12. It brings exciting new improvements to your desktop.
+The <big>Plasma edition</big> comes with the latest Plasma 5.27 LTS series and KDE Gear 23.04. It brings exciting new improvements to your desktop.
 
 This release includes a window tiling system, a more stylish app theme, cleaner and more usable tools, and widgets that give you more control over your machine. KDE's designers have been hard at work reducing the number of pages in Plasma's System Settings utility and moving smaller options in with other settings. Such is the case of the configuration for the animation when apps are launching, which now lives on the Cursors page. Additionally, the Highlight Changed Settings button has been moved to the hamburger menu for a cleaner look.
 
 Migrating Plasma to the new Wayland display server technology has been no mean feat. But despite how hard the work has been, it is paying off, as Wayland opens many new ways to interact with your desktop. Plasma 5.27's Wayland support is better than ever, with many bug fixes and reliability improvements throughout!
+
+New apps join KDE Gear 23.04 and unlock access to fledgling social media platforms, online video streaming services, podcasts, and much more. This new generation of apps are designed to work both on your computer and mobile phone right out of the box. But, of course, if you are also looking forward to new versions of the KDE tools you already know and trust, those are here too! Classics like Spectacle, Dolphin, Kdenlive, Kate, and Okular all boast shiny new features, code optimizations, and performance improvements.
 
 With our <big>XFCE edition</big>, we have now Xfce 4.18. Here some highlights: A new file highlighting feature (accessed from the file properties dialog) in Thunar file manager lets you set a custom colour background and a custom foreground text colour – an effective way to call attention to specific file(s) in a directory laden with similar-looking mime types. On the subject of finding files, Thunar includes recursive search.
 
@@ -24,6 +26,6 @@ The panel picks up a pair of new preferences. First, panel length is now configu
 
 Control Centre groups all of the desktop’s various modules for managing the system into one easy-to-use window. New options are present in many of these. For example you can disable header bars in dialogs from the Appearance module; show or hide a ‘delete’ option in file context menus from Desktop; and pick a default multi-monitor behaviour before you attach an additional screen – dead handy, that. 
 
-Kernel 6.1 LTS is used for this release, such as the latest drivers available to date. With 5.15 LTS and 5.10 LTS we offer additional support for older hardware as needed.
+Kernel 6.4 is used for this release, such as the latest drivers available to date. With 6.1 LTS and 5.15 LTS we offer additional support for older hardware as needed.
 
-We hope you enjoy this release and let us know what you think of Talos.
+We hope you enjoy this release and let us know what you think of Uranos.

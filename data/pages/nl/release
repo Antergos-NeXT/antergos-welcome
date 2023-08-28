@@ -12,13 +12,17 @@ GNOME’s accessibility settings have been redesigned for GNOME 44. The differen
 
 Lastly, Software in GNOME 44 offers a smoother and faster experience. The pages for each software category are now displayed more quickly, so you can browse with less interruption. Reloading of pages has also been reduced.
 
-The <big>Plasma edition</big> comes with the latest Plasma 5.27 LTS series and KDE Gear 23.04. It brings exciting new improvements to your desktop.
+The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/5/5.27.0/">Plasma 5.27 LTS series</a> and <a href="https://kde.org/announcements/gear/23.08.0/">KDE Gear 23.08</a>. It brings exciting new improvements to your desktop.
 
 This release includes a window tiling system, a more stylish app theme, cleaner and more usable tools, and widgets that give you more control over your machine. KDE's designers have been hard at work reducing the number of pages in Plasma's System Settings utility and moving smaller options in with other settings. Such is the case of the configuration for the animation when apps are launching, which now lives on the Cursors page. Additionally, the Highlight Changed Settings button has been moved to the hamburger menu for a cleaner look.
 
 Migrating Plasma to the new Wayland display server technology has been no mean feat. But despite how hard the work has been, it is paying off, as Wayland opens many new ways to interact with your desktop. Plasma 5.27's Wayland support is better than ever, with many bug fixes and reliability improvements throughout!
 
-New apps join KDE Gear 23.04 and unlock access to fledgling social media platforms, online video streaming services, podcasts, and much more. This new generation of apps are designed to work both on your computer and mobile phone right out of the box. But, of course, if you are also looking forward to new versions of the KDE tools you already know and trust, those are here too! Classics like Spectacle, Dolphin, Kdenlive, Kate, and Okular all boast shiny new features, code optimizations, and performance improvements.
+Dolphin 23.08 tweaks what it shows and how it shows it to give you a better idea of what you are looking at and what you can do with it. Dolphin hides temporary and backup files, uncluttering your view and stopping you from accidentally tampering with them. Other smaller details, like showing the progress of the calculation of the size of an item as it is happening, and the information of a selected file in the information panel (instead of showing the information of every file the cursor rolls over) help you get a clearer idea of what is going on in each moment.
+
+We renamed Kalendar to Merkuro since the application not only lets you manage your events and tasks any more, but also your contacts. Skanpage, KDE's scanning utility, now lets you re-order multi-page scans using drag-and-drop, and offers more adjustment options, like brightness, contrast, gamma, and color balance.
+
+Itinerary is KDE's travel assistant. Apart from reading and importing data from confirmation emails and SMS sent by airline companies, Itinerary can now import online railway tickets using the booking reference and passenger name, and grab booking details directly from the operator's website. Note that this is currently only available for Deutsche Bahn and SNCF.
 
 With our <big>XFCE edition</big>, we have now Xfce 4.18. Here some highlights: A new file highlighting feature (accessed from the file properties dialog) in Thunar file manager lets you set a custom colour background and a custom foreground text colour – an effective way to call attention to specific file(s) in a directory laden with similar-looking mime types. On the subject of finding files, Thunar includes recursive search.
 
@@ -26,6 +30,6 @@ The panel picks up a pair of new preferences. First, panel length is now configu
 
 Control Centre groups all of the desktop’s various modules for managing the system into one easy-to-use window. New options are present in many of these. For example you can disable header bars in dialogs from the Appearance module; show or hide a ‘delete’ option in file context menus from Desktop; and pick a default multi-monitor behaviour before you attach an additional screen – dead handy, that. 
 
-Kernel 6.4 is used for this release, such as the latest drivers available to date. With 6.1 LTS and 5.15 LTS we offer additional support for older hardware as needed.
+Kernel 6.5 is used for this release, such as the latest drivers available to date. With 6.1 LTS and 5.15 LTS we offer additional support for older hardware as needed.
 
 We hope you enjoy this release and let us know what you think of Uranos.

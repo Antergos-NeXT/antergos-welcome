@@ -1,18 +1,22 @@
-<big>Manjaro 23.0</big>
+<big>Manjaro 23.1</big>
 
-Since we released Talos in April 2023 we worked hard to get the next release of Manjaro out there. We call it Uranos.
+Since we released Uranos in October 2023 we worked hard to get the next release of Manjaro out there. We call it Vulcan. This is also our first release on which we switch over to Pipewire 1.0.
 
-The <big>GNOME edition</big> has received several updates to Gnome 44 series. This includes a lot of fixes and polish when <a href="https://release.gnome.org/44/">Gnome 44</a> originally was released in March 2023. You can find the changes made to each point-release here: <a href="https://download.gnome.org/core/44/44.1/NEWS">44.1</a>, <a href="https://download.gnome.org/core/44/44.2/NEWS">44.2</a>, <a href="https://download.gnome.org/core/44/44.3/NEWS">44.3</a>, <a href="https://download.gnome.org/core/44/44.4/NEWS">44.4</a>.
+The <big>GNOME edition</big> has received several updates to Gnome 45 series. This includes a lot of fixes and polish when <a href="https://release.gnome.org/45/">Gnome 45</a> originally was released in September 2023. You can find the changes made to each point-release here: <a href="https://download.gnome.org/core/45/45.1/NEWS">45.1</a>.
 
-Highlights of 44 release series is:
+Highlights of 45 release series are:
 
-GNOME’s file chooser dialogs have only ever had a list view, which is great when you want to pick a file based on its name, but isn’t so good when picking files based on their thumbnails. Over the years, GNOME users have therefore repeatedly requested that a grid view be added to the file chooser. This has been one of the most positively received changes in our history, so we are confident that people will like it added in this release cycle!
+One of the most noticeable changes in GNOME 45 is the new activities button. Located in the corner of the top bar, this button was previously labelled “Activities”. In GNOME 45, this static label has been replaced with a dynamic workspace indicator.
 
-GNOME’s accessibility settings have been redesigned for GNOME 44. The different sections of settings are now split up, to make them easier to navigate. The design of individual settings has also been improved, to be clearer and more consistent with the rest of settings. Additionally, many settings have had descriptions added. Mouse and Touchpad settings have been reworked for GNOME 44. The most noticeable change is the addition of videos which demonstrate the different available options. Not only do these look great, but they also make the various settings easier to understand.
+The new button design is a response to user testing results over recent years, and we are confident that its purpose will be more obvious to new GNOME users. As part of this change, the old app menu (which showed the name of the currently focused app), was also retired. This retirement was another response to user testing results, and was required to make space for the new design.
 
-Lastly, Software in GNOME 44 offers a smoother and faster experience. The pages for each software category are now displayed more quickly, so you can browse with less interruption. Reloading of pages has also been reduced.
+Search performance has been a major area of work for GNOME 45. These performance improvements have been made to a range of apps, including Software, Characters, Clocks, Files, and Calculator. Together, these changes result in faster search and reduced resource usage, which can be seen in both individual apps and in system search.
 
-The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/5/5.27.0/">Plasma 5.27 LTS series</a> and <a href="https://kde.org/announcements/gear/23.08.0/">KDE Gear 23.08</a>. It brings exciting new improvements to your desktop.
+Many core GNOME apps are using new interface components in the 45 release. These new components bring a fresh new look, and also perform better across different window sizes and device form factors.
+
+Lastly much work has also been done on search in the Files app. This has been given a significant speed boost, meaning that results are now returned in milliseconds, even when searching millions of files. 
+
+The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/5/5.27.9/">Plasma 5.27 LTS series</a> and <a href="https://kde.org/announcements/gear/23.08.3/">KDE Gear 23.08.3</a>. It brings exciting new improvements to your desktop.
 
 This release includes a window tiling system, a more stylish app theme, cleaner and more usable tools, and widgets that give you more control over your machine. KDE's designers have been hard at work reducing the number of pages in Plasma's System Settings utility and moving smaller options in with other settings. Such is the case of the configuration for the animation when apps are launching, which now lives on the Cursors page. Additionally, the Highlight Changed Settings button has been moved to the hamburger menu for a cleaner look.
 
@@ -30,6 +34,6 @@ The panel picks up a pair of new preferences. First, panel length is now configu
 
 Control Centre groups all of the desktop’s various modules for managing the system into one easy-to-use window. New options are present in many of these. For example you can disable header bars in dialogs from the Appearance module; show or hide a ‘delete’ option in file context menus from Desktop; and pick a default multi-monitor behaviour before you attach an additional screen – dead handy, that. 
 
-Kernel 6.5 is used for this release, such as the latest drivers available to date. With 6.1 LTS and 5.15 LTS we offer additional support for older hardware as needed.
+Kernel 6.6 LTS is used for this release, such as the latest drivers available to date. With 6.1 LTS and 5.15 LTS we offer additional support for older hardware as needed.
 
-We hope you enjoy this release and let us know what you think of Uranos.
+We hope you enjoy this release and let us know what you think of Vulcan.

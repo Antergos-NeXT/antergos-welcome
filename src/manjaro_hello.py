@@ -203,6 +203,8 @@ class Hello(Gtk.Window):
         if os.path.exists(self.preferences["live_path"]) and os.path.isfile(self.preferences["installer_path"]):
             self.builder.get_object("installlabel").set_visible(True)
             self.builder.get_object("install").set_visible(True)
+            if os.path.exists(self.preferences["live_path"]) and os.path.isfile(self.preferences["rescue_path"]):
+                self.builder.get_object("rescue").set_visible(True)
         # Installed systems
         else:
             manager = EmbedManager(EmbedBrowser(), EmbedLayouts())
@@ -270,6 +272,7 @@ class Hello(Gtk.Window):
                 "forum",
                 "install",
                 "installlabel",
+                "rescue" ,
                 "involved",
                 "mailling",
                 "readme",
@@ -359,6 +362,8 @@ class Hello(Gtk.Window):
         name = action.get_name()
         if name == "install":
             subprocess.Popen(["calamares_polkit"])
+        elif name == "rescue":
+            subprocess.Popen(["manjaro-rescue"])
         elif name == "autostart":
             self.set_autostart(action.get_active())
         elif name == "about":
@@ -372,7 +377,6 @@ class Hello(Gtk.Window):
                  subprocess.Popen(["plasma-welcome"])
             elif de == "gnome":
                 subprocess.Popen(["gnome-tour"])
-
 
     def on_btn_clicked(self, btn):
         """Event for applications button."""

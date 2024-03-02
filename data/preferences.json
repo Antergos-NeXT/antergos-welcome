@@ -4,6 +4,7 @@
     "data_path": "/usr/share/manjaro-hello/data/",
     "desktop_path": "/usr/share/applications/manjaro-hello.desktop",
     "installer_path": "/usr/bin/calamares",
+    "rescue_path": "/usr/bin/manjaro-rescue",
     "plasmawelcome_path": "/usr/bin/plasma-welcome",
     "gnometour_path": "/usr/bin/gnome-tour",
     "live_path": "/run/miso/bootmnt/manjaro",

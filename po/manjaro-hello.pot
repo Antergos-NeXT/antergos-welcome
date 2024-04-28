@@ -69,10 +69,6 @@ msgstr ""
 msgid "Forums"
 msgstr ""
 
-#: ../ui/manjaro-hello.glade:207
-msgid "Software"
-msgstr ""
-
 #: ../ui/manjaro-hello.glade:224
 msgid "Mailing lists"
 msgstr ""

@@ -199,23 +199,6 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="software">
-                <property name="always-show-image">True</property>
-                <property name="can-focus">False</property>
-                <property name="image-position">right</property>
-                <property name="label" translatable="yes">Software</property>
-                <property name="name">software</property>
-                <property name="receives-default">True</property>
-                <property name="tooltip-text" translatable="yes">Web resource</property>
-                <property name="visible">True</property>
-                <signal name="clicked" handler="on_link_clicked" swapped="yes"/>
-              </object>
-              <packing>
-                <property name="left-attach">1</property>
-                <property name="top-attach">6</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkButton" id="mailling">
                 <property name="always-show-image">True</property>
                 <property name="can-focus">False</property>
@@ -228,7 +211,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <signal name="clicked" handler="on_link_clicked" swapped="yes"/>
               </object>
               <packing>
-                <property name="left-attach">1</property>
+                <property name="left-attach">2</property>
                 <property name="top-attach">7</property>
               </packing>
             </child>
@@ -262,8 +245,8 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <signal name="clicked" handler="on_link_clicked" swapped="yes"/>
               </object>
               <packing>
-                <property name="left-attach">2</property>
-                <property name="top-attach">7</property>
+                <property name="left-attach">1</property>
+                <property name="top-attach">6</property>
               </packing>
             </child>
             <child>

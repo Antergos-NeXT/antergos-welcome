@@ -119,17 +119,21 @@ class Hello(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="Manjaro Hello", border_width=6)
         self.app = "manjaro-hello"
-        self.dev = "--dev" in sys.argv  # Dev mode activated ?
         screen = Gdk.Screen.get_default()
 
-        # Load preferences
+        self.dev = "--dev" in sys.argv
         if self.dev:
-            self.preferences = read_json("data/preferences.json")
-            self.preferences["data_path"] = "data/"
-            self.preferences["desktop_path"] = os.getcwd() + f"/{self.app}.desktop"
-            self.preferences["locale_path"] = "locale/"
-            self.preferences["ui_path"] = f"ui/{self.app}.glade"
-            self.preferences["style_path"] = f"ui/style.css"
+            # dont load hardcoded path in devmode
+            path = os.getcwd()
+            parent = os.path.abspath(os.path.join(path, os.pardir))
+            data = f"{parent}/data/"
+            ui = f"{parent}/ui/"
+            self.preferences = read_json(f"{data}preferences.json")
+            self.preferences["data_path"] = f"{data}"
+            self.preferences["desktop_path"] = f"{parent}/{self.app}.desktop"
+            self.preferences["locale_path"] = f"{parent}/locale/"
+            self.preferences["ui_path"] = f"{ui}{self.app}.glade"
+            self.preferences["style_path"] = f"{ui}style.css"
         else:
             self.preferences = read_json(f"/usr/share/{self.app}/data/preferences.json")
         # Get saved infos

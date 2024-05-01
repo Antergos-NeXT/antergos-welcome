@@ -15,7 +15,6 @@
     "style_path": "/usr/share/manjaro-hello/ui/style.css",
     "urls": {
         "development": "https://gitlab.manjaro.org",
-        "software": "https://software.manjaro.org/",
         "donate": "https://manjaro.org/donate",
         "facebook": "https://www.facebook.com/ManjaroLinux",
         "forum": "https://forum.manjaro.org",

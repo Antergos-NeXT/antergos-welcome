@@ -10,7 +10,7 @@ GNOME’s filemanager comes with a new global search feature in GNOME 46. Global
 
 GNOME’s remote desktop experience has been significantly enhanced for version 46, with the introduction of a new dedicated remote login option. This allows remotely connecting to a GNOME system which is not already in use. Connecting in this way means that the system’s display can be configured from the remote side, resulting in a better experience for the remote user.
 
-The Settings app has been reorganized for GNOME 46, to make it easier to navigate. To this end, a new System section has been created, which contains preferences for Region & Language, Date & Time, Users, Remote Desktop, Secure Shell, and About. The Apps settings have also been consolidated, and now include the Default Apps and Removable Media settings.
+The Settings app has been reorganized for GNOME 46, to make it easier to navigate. To this end, a new System section has been created, which contains preferences for Region &amp; Language, Date &amp; Time, Users, Remote Desktop, Secure Shell, and About. The Apps settings have also been consolidated, and now include the Default Apps and Removable Media settings.
 
 GNOME 46 contains many small improvements and polish changes to the core GNOME experience. Many of GNOME’s core apps have also been upgraded. The improvements in GNOME 46 are not just skin deep, and the new version comes with deep technical enhancements which result in a more performant and refined experience.
 

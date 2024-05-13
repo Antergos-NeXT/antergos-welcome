@@ -34,6 +34,6 @@ Control Centre groups all of the desktop’s various modules for managing the sy
 
 <big>Pamac</big> got ported to libalpm 6.1 and supports now the native download agents of libalpm. This will improve download of build scripts from the Arch User Repository and our Manjaro binary repositories.
 
-Kernel 6.8 is used for this release, such as the latest drivers available to date. With 6.6 LTS and 6.1 LTS we offer additional support for older hardware as needed.
+Kernel 6.9 is used for this release, such as the latest drivers available to date. With 6.6 LTS and 6.1 LTS we offer additional support for older hardware as needed.
 
 We hope you enjoy this release and let us know what you think of Wynsdey.

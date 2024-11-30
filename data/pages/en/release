@@ -1,28 +1,30 @@
-<big>Manjaro 24.1</big>
+<big>Manjaro 24.2</big>
 
-Since we released Wynsdey in May 2024 we worked hard to get the next release of Manjaro out there. We call it Xahea.
+Since we released Xahea in October 2024 we worked hard to get the next release of Manjaro out there. We call it Yonada.
 
-The <big>GNOME edition</big> has received several updates to Gnome 46 series. This includes a lot of fixes and polish when <a href="https://release.gnome.org/46/">Gnome 46</a> originally was released in March 2024. You can find the changes made to each point-release here: <a href="https://download.gnome.org/core/46/46.1/NEWS">46.1</a>, <a href="https://download.gnome.org/core/46/46.2/NEWS">46.2</a>, <a href="https://download.gnome.org/core/46/46.4/NEWS">46.4</a>, <a href="https://download.gnome.org/core/46/46.5/NEWS">46.5</a>.
+The <big>GNOME edition</big> has received several updates to Gnome 47 series. This includes a lot of fixes and polish when <a href="https://release.gnome.org/47/">Gnome 47</a> originally was released in September 2024. You can find the changes made to each point-release here: <a href="https://download.gnome.org/core/47/47.1/NEWS">47.1</a>, <a href="https://download.gnome.org/core/47/47.2/NEWS">47.2</a>.
 
-Highlights of 46 release series are:
+Highlights of 47 release series are:
 
-GNOME’s filemanager comes with a new global search feature in GNOME 46. Global search is a great way to jump directly into search, without having to think about where the items you want are located. The new feature also leverages GNOME’s existing file search capabilities, including the ability to search the contents of files, and filter by file type and modification date. Another great thing about global search is that it makes it possible to search multiple locations simultaneously, which can include locations that aren’t in your home directory. To set this up, go to the newly refined search locations settings, and add the locations that you want to be included.
+Accent colors have finally arrived! This new option allows customization of the existing blue accent color which is used throughout GNOME’s interfaces, with a range of fantastic alternative accent colors to choose from. Just select one from the Appearance settings, and it will be automatically used throughout the system and apps.
 
-GNOME’s remote desktop experience has been significantly enhanced for version 46, with the introduction of a new dedicated remote login option. This allows remotely connecting to a GNOME system which is not already in use. Connecting in this way means that the system’s display can be configured from the remote side, resulting in a better experience for the remote user.
+GNOME 47 enhances the user experience on screens with lower resolutions by optimizing how icons and interface elements are rendered. In previous versions, users with lower-resolution displays might have noticed that icons appeared too small or difficult to interact with. With this update, GNOME automatically scales icons to appear larger and more visually accessible on such screens.
 
-The Settings app has been reorganized for GNOME 46, to make it easier to navigate. To this end, a new System section has been created, which contains preferences for Region &amp; Language, Date &amp; Time, Users, Remote Desktop, Secure Shell, and About. The Apps settings have also been consolidated, and now include the Default Apps and Removable Media settings.
+GNOME 47 introduces support for hardware encoding on Intel and AMD GPUs when recording the screen. This significantly reduces the strain on your system during screen recording. As a result, you’ll experience smoother performance with less impact on system resources, making it easier to capture high-quality screen captures without compromising the responsiveness of your desktop or other running applications. Whether you’re creating tutorials, recording gameplay, this improvement ensures a more efficient and seamless screen capture experience.
 
-GNOME 46 contains many small improvements and polish changes to the core GNOME experience. Many of GNOME’s core apps have also been upgraded. The improvements in GNOME 46 are not just skin deep, and the new version comes with deep technical enhancements which result in a more performant and refined experience.
+GNOME’s remote desktop support has improved for version 47, with the addition of persistent remote login sessions. If you happen to be disconnected from a remote login session, it will now continue, so that it is possible to log back in and continue from where you left off, with the system in the same state as when you left it.
 
-The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/6/6.0.5/">Plasma 6.1 series</a> and <a href="https://kde.org/announcements/gear/24.08.1/">KDE Gear 24.08</a>. It brings exciting new improvements to your desktop.
+GNOME 47 introduces improvements to Files search, by providing more contextual information about search performance. If any factors are affecting search results, such as if the location is not indexed or if it is a remote directory, then a new button is shown in the search bar, which shows information about the current search context. This added context helps users understand why certain searches might be slower or incomplete. It also allows users to update their search settings to get the best experience.
 
-Plasma 6 hits its stride with version 6.1. While Plasma 6.0 was all about getting the migration to the underlying Qt 6 frameworks correct (and what a massive job that was), 6.1 is where developers start implementing the features that will take your desktop to a new level.
+The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/6/6.1.4/">Plasma 6.2 series</a>, <a https://kde.org/announcements/frameworks/6/6.8.0/">Frameworks 6.8</a> and <a href="https://kde.org/announcements/gear/24.08.3/">KDE Gear 24.08</a>. It brings exciting new improvements to your desktop.
 
-One of the more spectacular (and useful) features added in Plasma 6.1 is that you can now start up a remote desktop directly from the System Settings app. This means that if you are sysadmin who needs to troubleshoot users' machines, or simply need to work on a Plasma-enabled computer that is out of reach, setting up a connection is just a few clicks away.
+Plasma 6 has come into its own over the last two releases. The wrinkles that always come with a major migration have been ironed out, and it’s time to start delivering on the promises of the new Qt 6 and Wayland technology platforms that Plasma is built on top of. One of the outstanding issues has been to make Plasma a more artist-friendly environment by providing full support for the hardware that creative people need to get their work done.
 
-We all love customizing our Plasma desktops, don't we? One of the quickest ways to do this is by entering Plasma's Edit Mode (right-click anywhere on the desktop background and select Enter Edit Mode from the menu). In version 6.1, the visual aspect of Edit Mode has been overhauled and you will now see a slick animation when you activate it. The entire desktop zooms out smoothly, giving you a better overview of what is going on and allowing you to make your changes with ease.
+Plasma 6.2 includes a smorgasbord of new features for users of drawing tablets. Open System Settings and look for Drawing Tablet to see various tools for configuring drawing tablets. To ensure consistent colors across monitors, a more complete support for the Wayland color management protocol was implemented, and enabled by default.
 
-Plasma 6.1 on Wayland now has a feature that "remembers" what you were doing in your last session like it did under X11. Although this is still work in progress, If you log off and shut down your computer with a dozen open windows, Plasma will now open them for you the next time you power up your desktop, making it faster and easier to get back to what you were doing. At Manjaro we are still defaulting to X11, however switching to Wayland can be done easily by selecting the wanted session in your display manager.
+Managing how much energy your system consumes and when are not only important for preserving its resources for when you need them, but also for using it in an environmentally responsible way. You can now override misbehaving applications that block the system from going to sleep or locking the screen (and thus prevent saving power), and you can also adjust the brightness of each connected monitor machine separately.
+
+In Plasma 6.2, we overhauled System Settings’ Accessibility page and added colorblindness filters. We also added support for the full “sticky keys” feature on Wayland. Accent colors and the System Tray got tweaked, the Widget Explorer reworked, and the look of dialogs and pop-ups unified. Finally, the Welcome Center, sound effects, and actions got improved.
 
 With our <big>XFCE edition</big>, we have now Xfce 4.18. Here some highlights: A new file highlighting feature (accessed from the file properties dialog) in Thunar file manager lets you set a custom colour background and a custom foreground text colour – an effective way to call attention to specific file(s) in a directory laden with similar-looking mime types. On the subject of finding files, Thunar includes recursive search.
 
@@ -30,6 +32,6 @@ The panel picks up a pair of new preferences. First, panel length is now configu
 
 Control Centre groups all of the desktop’s various modules for managing the system into one easy-to-use window. New options are present in many of these. For example you can disable header bars in dialogs from the Appearance module; show or hide a ‘delete’ option in file context menus from Desktop; and pick a default multi-monitor behaviour before you attach an additional screen – dead handy, that.
 
-Kernel 6.10 is used for this release, such as the latest drivers available to date. With 6.6 LTS and 6.1 LTS we offer additional support for older hardware as needed.
+Kernel 6.12 is used for this release, such as the latest drivers available to date. With 6.6 LTS and 6.1 LTS we offer additional support for older hardware as needed.
 
 We hope you enjoy this release and let us know what you think of Xahea.

@@ -16,7 +16,7 @@ GNOME’s remote desktop support has improved for version 47, with the addition 
 
 GNOME 47 introduces improvements to Files search, by providing more contextual information about search performance. If any factors are affecting search results, such as if the location is not indexed or if it is a remote directory, then a new button is shown in the search bar, which shows information about the current search context. This added context helps users understand why certain searches might be slower or incomplete. It also allows users to update their search settings to get the best experience.
 
-The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/6/6.1.4/">Plasma 6.2 series</a>, <a https://kde.org/announcements/frameworks/6/6.8.0/">Frameworks 6.8</a> and <a href="https://kde.org/announcements/gear/24.08.3/">KDE Gear 24.08</a>. It brings exciting new improvements to your desktop.
+The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/6/6.1.4/">Plasma 6.2 series</a>, <a href="https=://kde.org/announcements/frameworks/6/6.8.0/">Frameworks 6.8</a> and <a href="https://kde.org/announcements/gear/24.08.3/">KDE Gear 24.08</a>. It brings exciting new improvements to your desktop.
 
 Plasma 6 has come into its own over the last two releases. The wrinkles that always come with a major migration have been ironed out, and it’s time to start delivering on the promises of the new Qt 6 and Wayland technology platforms that Plasma is built on top of. One of the outstanding issues has been to make Plasma a more artist-friendly environment by providing full support for the hardware that creative people need to get their work done.
 

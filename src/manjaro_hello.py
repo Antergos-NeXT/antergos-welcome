@@ -59,7 +59,7 @@ class Embed:
             window.builder.get_object("stack").add_named(self.box, self.name + "page")
 
 class EmbedLayouts(Embed):
-    """Gnome layout switcher"""
+    """GNOME Layout Switcher"""
     def load(self, window: Gtk.Window) -> bool:
         try:
             from layoutswitcherlib.layoutsbox import LayoutBox
@@ -78,7 +78,7 @@ class EmbedLayouts(Embed):
             except Exception as err:
                 print("Error in Embled application:", err)
         except ModuleNotFoundError as err:
-            print(f"Info: Gnome-layout-switcher not installed")
+            print(f"Info: gnome-layout-switcher not installed")
         self.loaded = self.box is not None
         return self.loaded
 

@@ -403,11 +403,11 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 </child>
                 <child>
                   <object class="GtkButton" id="appLayouts">
-                    <property name="label" translatable="yes">Gnome Layouts Manager</property>
+                    <property name="label" translatable="yes">GNOME Layout Switcher</property>
                     <property name="name">appLayouts</property>
                     <property name="can-focus">False</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">Manjaro Gnome config tool</property>
+                    <property name="tooltip-text" translatable="yes">Manjaro GNOME config tool</property>
                     <signal name="clicked" handler="on_btn_clicked" swapped="yes"/>
                   </object>
                   <packing>

@@ -16,12 +16,12 @@
     "urls": {
         "development": "https://gitlab.manjaro.org",
         "donate": "https://manjaro.org/donate",
-        "facebook": "https://www.facebook.com/ManjaroLinux",
+        "facebook": "https://facebook.com/ManjaroLinux",
         "forum": "https://forum.manjaro.org",
-        "youtube": "https://www.youtube.com/@manjaro-linux",
+        "youtube": "https://youtube.com/@manjaro-linux",
         "mailling": "https://lists.manjaro.org/pipermail/",
-        "reddit": "https://www.reddit.com/r/ManjaroLinux",
-        "twitter": "https://twitter.com/ManjaroLinux",
+        "reddit": "https://reddit.com/r/Manjaro",
+        "x": "https://x.com/ManjaroLinux",
         "wiki": "https://wiki.manjaro.org"
     }
 }

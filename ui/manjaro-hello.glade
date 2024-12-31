@@ -1,42 +1,42 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
 <!-- Created with Cambalache 0.16.0 -->
 <interface>
-  <!-- interface-name manjaro-hello.glade -->
   <requires lib="gtk+" version="3.20"/>
   <object class="GtkImage" id="abouticon">
+    <property name="visible">True</property>
     <property name="can-focus">False</property>
     <property name="icon-name">help-about</property>
-    <property name="visible">True</property>
   </object>
   <object class="GtkWindow" id="window">
     <property name="can-focus">False</property>
-    <property name="default-height">500</property>
-    <property name="default-width">800</property>
-    <property name="has-resize-grip">True</property>
     <property name="window-position">center</property>
+    <property name="default-width">800</property>
+    <property name="default-height">500</property>
+    <property name="has-resize-grip">True</property>
     <signal name="delete-event" handler="on_delete_window" swapped="yes"/>
     <child>
       <object class="GtkStack" id="stack">
+        <property name="visible">True</property>
         <property name="can-focus">False</property>
         <property name="hexpand">True</property>
         <property name="transition-type">crossfade</property>
-        <property name="visible">True</property>
         <child>
           <!-- n-columns=3 n-rows=11 -->
           <object class="GtkGrid" id="homepage">
+            <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="column-homogeneous">True</property>
-            <property name="column-spacing">10</property>
-            <property name="margin-bottom">10</property>
             <property name="margin-left">10</property>
             <property name="margin-right">10</property>
             <property name="margin-top">10</property>
+            <property name="margin-bottom">10</property>
             <property name="row-spacing">20</property>
-            <property name="visible">True</property>
+            <property name="column-spacing">10</property>
+            <property name="column-homogeneous">True</property>
             <child>
               <object class="GtkImage" id="distriblogo">
-                <property name="can-focus">False</property>
                 <property name="visible">True</property>
+                <property name="can-focus">False</property>
               </object>
               <packing>
                 <property name="left-attach">0</property>
@@ -46,10 +46,10 @@
             </child>
             <child>
               <object class="GtkLabel" id="welcometitle">
+                <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="has-focus">True</property>
                 <property name="label" translatable="yes">Welcome to Manjaro!</property>
-                <property name="visible">True</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                   <attribute name="scale" value="2"/>
@@ -63,15 +63,15 @@
             </child>
             <child>
               <object class="GtkLabel" id="welcomelabel">
+                <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="justify">fill</property>
                 <property name="label" translatable="yes">Thank you for joining our community!
 
 We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback.</property>
-                <property name="max-width-chars">1</property>
-                <property name="visible">True</property>
-                <property name="width-chars">1</property>
+                <property name="justify">fill</property>
                 <property name="wrap">True</property>
+                <property name="width-chars">1</property>
+                <property name="max-width-chars">1</property>
               </object>
               <packing>
                 <property name="left-attach">0</property>
@@ -81,9 +81,9 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkLabel" id="firstcategory">
+                <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="label" translatable="yes">DOCUMENTATION</property>
-                <property name="visible">True</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                 </attributes>
@@ -95,9 +95,9 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkLabel" id="secondcategory">
+                <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="label" translatable="yes">SUPPORT</property>
-                <property name="visible">True</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                 </attributes>
@@ -109,9 +109,9 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkLabel" id="thirdcategory">
+                <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="label" translatable="yes">PROJECT</property>
-                <property name="visible">True</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                 </attributes>
@@ -123,11 +123,11 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkButton" id="readme">
-                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Read me</property>
                 <property name="name">readme</property>
-                <property name="receives-default">True</property>
                 <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
                 <signal name="clicked" handler="on_btn_clicked" swapped="yes"/>
               </object>
               <packing>
@@ -137,12 +137,12 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkButton" id="release">
-                <property name="always-show-image">True</property>
-                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Release info</property>
                 <property name="name">release</property>
-                <property name="receives-default">True</property>
                 <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="on_btn_clicked" swapped="yes"/>
               </object>
               <packing>
@@ -152,14 +152,14 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkButton" id="wiki">
-                <property name="always-show-image">True</property>
-                <property name="can-focus">False</property>
-                <property name="image-position">right</property>
                 <property name="label" translatable="yes">Wiki</property>
                 <property name="name">wiki</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
                 <property name="tooltip-text" translatable="yes">Web resource</property>
-                <property name="visible">True</property>
+                <property name="image-position">right</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="yes"/>
               </object>
               <packing>
@@ -169,11 +169,11 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkButton" id="involved">
-                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Get involved</property>
                 <property name="name">involved</property>
-                <property name="receives-default">True</property>
                 <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="receives-default">True</property>
                 <signal name="clicked" handler="on_btn_clicked" swapped="yes"/>
               </object>
               <packing>
@@ -183,14 +183,14 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkButton" id="forum">
-                <property name="always-show-image">True</property>
-                <property name="can-focus">False</property>
-                <property name="image-position">right</property>
                 <property name="label" translatable="yes">Forums</property>
                 <property name="name">forum</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
                 <property name="tooltip-text" translatable="yes">Web resource</property>
-                <property name="visible">True</property>
+                <property name="image-position">right</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="yes"/>
               </object>
               <packing>
@@ -200,14 +200,14 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkButton" id="mailling">
-                <property name="always-show-image">True</property>
-                <property name="can-focus">False</property>
-                <property name="image-position">right</property>
                 <property name="label" translatable="yes">Mailing lists</property>
                 <property name="name">mailling</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
                 <property name="tooltip-text" translatable="yes">Web resource</property>
-                <property name="visible">True</property>
+                <property name="image-position">right</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="yes"/>
               </object>
               <packing>
@@ -217,14 +217,14 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkButton" id="development">
-                <property name="always-show-image">True</property>
-                <property name="can-focus">False</property>
-                <property name="image-position">right</property>
                 <property name="label" translatable="yes">Development</property>
                 <property name="name">development</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
                 <property name="tooltip-text" translatable="yes">Web resource</property>
-                <property name="visible">True</property>
+                <property name="image-position">right</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="yes"/>
               </object>
               <packing>
@@ -234,14 +234,14 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkButton" id="donate">
-                <property name="always-show-image">True</property>
-                <property name="can-focus">False</property>
-                <property name="image-position">right</property>
                 <property name="label" translatable="yes">Donate</property>
                 <property name="name">donate</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
                 <property name="tooltip-text" translatable="yes">Web resource</property>
-                <property name="visible">True</property>
+                <property name="image-position">right</property>
+                <property name="always-show-image">True</property>
                 <signal name="clicked" handler="on_link_clicked" swapped="yes"/>
               </object>
               <packing>
@@ -251,16 +251,15 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkBox">
+                <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="spacing">10</property>
                 <property name="valign">end</property>
                 <property name="vexpand">True</property>
-                <property name="visible">True</property>
+                <property name="spacing">10</property>
                 <child>
                   <object class="GtkComboBoxText" id="languages">
-                    <property name="can-focus">False</property>
                     <property name="visible">True</property>
-                    <signal name="changed" handler="on_languages_changed" swapped="yes"/>
+                    <property name="can-focus">False</property>
                     <items>
                       <item id="sq">Albanian</item>
                       <item id="ar">Arabic</item>
@@ -308,38 +307,42 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                       <item id="uk">Ukrainian</item>
                       <item id="vi-VN">Vietnamese (Viet Nam)</item>
                     </items>
+                    <signal name="changed" handler="on_languages_changed" swapped="yes"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
+                    <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
                   <object class="GtkLabel" id="autostartlabel">
+                    <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <property name="halign">end</property>
-                    <property name="label" translatable="yes">Launch at start</property>
                     <property name="valign">center</property>
                     <property name="vexpand">True</property>
-                    <property name="visible">True</property>
+                    <property name="label" translatable="yes">Launch at start</property>
                   </object>
                   <packing>
                     <property name="expand">True</property>
                     <property name="fill">True</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
                   <object class="GtkSwitch" id="autostart">
-                    <property name="can-focus">True</property>
                     <property name="name">autostart</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
                     <property name="valign">center</property>
                     <property name="vexpand">True</property>
-                    <property name="visible">True</property>
                     <signal name="notify::active" handler="on_action_clicked" swapped="yes"/>
                   </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
               </object>
@@ -363,24 +366,10 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
               </packing>
             </child>
             <child>
-              <object class="GtkButton" id="rescue">
-                <property name="can-focus">True</property>
-                <property name="label">System Recovery</property>
-                <property name="name">rescue</property>
-                <property name="receives-default">True</property>
-                <property name="tooltip-text">System Recovery</property>
-                <signal name="clicked" handler="on_action_clicked" swapped="yes"/>
-              </object>
-              <packing>
-                <property name="left-attach">2</property>
-                <property name="top-attach">8</property>
-              </packing>
-            </child>
-            <child>
               <object class="GtkButton" id="install">
-                <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Launch installer</property>
                 <property name="name">install</property>
+                <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
                 <signal name="clicked" handler="on_action_clicked" swapped="yes"/>
               </object>
@@ -391,17 +380,17 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkBox">
+                <property name="name">boxPlugins</property>
+                <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="halign">center</property>
-                <property name="homogeneous">True</property>
-                <property name="name">boxPlugins</property>
                 <property name="spacing">20</property>
-                <property name="visible">True</property>
+                <property name="homogeneous">True</property>
                 <child>
                   <object class="GtkButton" id="appBrowser">
-                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Applications</property>
                     <property name="name">appBrowser</property>
+                    <property name="can-focus">False</property>
                     <property name="receives-default">True</property>
                     <property name="tooltip-text" translatable="yes">Common application selection</property>
                     <signal name="clicked" handler="on_btn_clicked" swapped="yes"/>
@@ -409,13 +398,14 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   <packing>
                     <property name="expand">True</property>
                     <property name="fill">True</property>
+                    <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
                   <object class="GtkButton" id="appLayouts">
-                    <property name="can-focus">False</property>
                     <property name="label" translatable="yes">Gnome Layouts Manager</property>
                     <property name="name">appLayouts</property>
+                    <property name="can-focus">False</property>
                     <property name="receives-default">True</property>
                     <property name="tooltip-text" translatable="yes">Manjaro Gnome config tool</property>
                     <signal name="clicked" handler="on_btn_clicked" swapped="yes"/>
@@ -423,20 +413,22 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="deWelcome">
+                  <object class="GtkButton" id="rescue">
+                    <property name="label">System Recovery</property>
+                    <property name="name">rescue</property>
                     <property name="can-focus">True</property>
-                    <property name="label" translatable="yes">&lt;dewelcome&gt;</property>
-                    <property name="name">deWelcome</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">Desktop Environent-specific Welcome</property>
+                    <property name="tooltip-text">System Recovery</property>
                     <signal name="clicked" handler="on_action_clicked" swapped="yes"/>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
+                    <property name="expand">False</property>
                     <property name="fill">True</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
               </object>
@@ -448,85 +440,89 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkBox" id="social">
+                <property name="visible">True</property>
                 <property name="can-focus">False</property>
                 <property name="halign">center</property>
-                <property name="spacing">10</property>
                 <property name="valign">end</property>
-                <property name="visible">True</property>
+                <property name="spacing">10</property>
                 <child>
                   <object class="GtkEventBox">
-                    <property name="can-focus">False</property>
                     <property name="name">youtube</property>
                     <property name="visible">True</property>
+                    <property name="can-focus">False</property>
                     <signal name="button-press-event" handler="on_link_clicked" swapped="yes"/>
                     <child>
                       <object class="GtkImage" id="youtube">
+                        <property name="visible">True</property>
                         <property name="can-focus">False</property>
                         <property name="tooltip-text">YouTube</property>
-                        <property name="visible">True</property>
                       </object>
                     </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
+                    <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
                   <object class="GtkEventBox">
-                    <property name="can-focus">False</property>
                     <property name="name">facebook</property>
                     <property name="visible">True</property>
+                    <property name="can-focus">False</property>
                     <signal name="button-press-event" handler="on_link_clicked" swapped="yes"/>
                     <child>
                       <object class="GtkImage" id="facebook">
+                        <property name="visible">True</property>
                         <property name="can-focus">False</property>
                         <property name="tooltip-text">Facebook</property>
-                        <property name="visible">True</property>
                       </object>
                     </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
+                    <property name="position">1</property>
                   </packing>
                 </child>
                 <child>
                   <object class="GtkEventBox">
-                    <property name="can-focus">False</property>
-                    <property name="name">twitter</property>
+                    <property name="name">x</property>
                     <property name="visible">True</property>
+                    <property name="can-focus">False</property>
                     <signal name="button-press-event" handler="on_link_clicked" swapped="yes"/>
                     <child>
-                      <object class="GtkImage" id="twitter">
-                        <property name="can-focus">False</property>
-                        <property name="tooltip-text">Twitter</property>
+                      <object class="GtkImage" id="x">
                         <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="tooltip-text">X</property>
                       </object>
                     </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
+                    <property name="position">2</property>
                   </packing>
                 </child>
                 <child>
                   <object class="GtkEventBox">
-                    <property name="can-focus">False</property>
                     <property name="name">reddit</property>
                     <property name="visible">True</property>
+                    <property name="can-focus">False</property>
                     <signal name="button-press-event" handler="on_link_clicked" swapped="yes"/>
                     <child>
                       <object class="GtkImage" id="reddit">
+                        <property name="visible">True</property>
                         <property name="can-focus">False</property>
                         <property name="tooltip-text">Reddit</property>
-                        <property name="visible">True</property>
                       </object>
                     </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">True</property>
+                    <property name="position">3</property>
                   </packing>
                 </child>
                 <style>
@@ -537,6 +533,24 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                 <property name="left-attach">1</property>
                 <property name="top-attach">10</property>
               </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
             </child>
             <style>
               <class name="homepage"/>
@@ -550,18 +564,18 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
     </child>
     <child type="titlebar">
       <object class="GtkHeaderBar" id="headerbar">
-        <property name="can-focus">False</property>
-        <property name="show-close-button">True</property>
-        <property name="title">Manjaro Hello</property>
         <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="title">Manjaro Hello</property>
+        <property name="show-close-button">True</property>
         <child>
           <object class="GtkButton" id="about">
-            <property name="can-focus">False</property>
-            <property name="image">abouticon</property>
             <property name="name">about</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
             <property name="receives-default">True</property>
             <property name="tooltip-text" translatable="yes">About</property>
-            <property name="visible">True</property>
+            <property name="image">abouticon</property>
             <signal name="clicked" handler="on_action_clicked" swapped="yes"/>
           </object>
           <packing>
@@ -572,6 +586,15 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
     </child>
   </object>
   <object class="GtkAboutDialog" id="aboutdialog">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">About</property>
+    <property name="type-hint">dialog</property>
+    <property name="transient-for">window</property>
+    <property name="program-name">Manjaro Hello</property>
+    <property name="version">0.7.2</property>
+    <property name="comments" translatable="yes">Welcome screen for Manjaro</property>
+    <property name="website">https://gitlab.manjaro.org/applications/manjaro-hello</property>
+    <property name="website-label">GitLab</property>
     <property name="authors">Hugo Posnic
 Johnathan Jenkins
 Frede Hundewadt
@@ -579,13 +602,6 @@ Bernhard Landauer
 Philip Müller
 Papa Joker
 Oguz Kagan EREN</property>
-    <property name="can-focus">False</property>
-    <property name="comments" translatable="yes">Welcome screen for Manjaro</property>
-    <property name="license-type">gpl-3-0</property>
-    <property name="logo-icon-name"/>
-    <property name="program-name">Manjaro Hello</property>
-    <property name="title" translatable="yes">About</property>
-    <property name="transient-for">window</property>
     <property name="translator-credits">abdelhak gasmi
 Al Manja
 Albert Cutrona
@@ -618,10 +634,8 @@ Stefano Capitani
 Stéphane
 Πέτρος Σαμαράς
 Андрей Раугас</property>
-    <property name="type-hint">dialog</property>
-    <property name="version">0.7.2</property>
-    <property name="website">https://gitlab.manjaro.org/applications/manjaro-hello</property>
-    <property name="website-label">GitLab</property>
+    <property name="logo-icon-name"/>
+    <property name="license-type">gpl-3-0</property>
     <child internal-child="vbox">
       <object class="GtkBox">
         <property name="can-focus">True</property>
@@ -636,6 +650,7 @@ Stéphane
           <packing>
             <property name="expand">False</property>
             <property name="fill">False</property>
+            <property name="position">0</property>
           </packing>
         </child>
       </object>

@@ -1,11 +1,18 @@
 # Change Log
 All notable changes to this project will be documented in this file.
+
+## [0.7.3] - 2025-01-01
+### Added
+- Reorganized and added new applications
+
 ## [0.7.2] - 2024-01-09
 ### Added
 - Add System Recovery option
+
 ## [0.6.7] - 2020-07-11
 ### Added
 - Some design changes
+
 ## [0.6.2] - 2019-10-02
 ### Added
 - Pages: tr, ko-KR.

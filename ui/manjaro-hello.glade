@@ -417,6 +417,20 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
+                  <object class="GtkButton" id="deWelcome">
+                    <property name="can-focus">True</property>
+                    <property name="label" translatable="yes">&lt;dewelcome&gt;</property>
+                    <property name="name">deWelcome</property>
+                    <property name="receives-default">True</property>
+                    <property name="tooltip-text" translatable="yes">Desktop Environent-specific Welcome</property>
+                    <signal name="clicked" handler="on_action_clicked" swapped="yes"/>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                  </packing>
+                </child>
+                <child>
                   <object class="GtkButton" id="rescue">
                     <property name="label">System Recovery</property>
                     <property name="name">rescue</property>

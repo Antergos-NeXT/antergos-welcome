@@ -66,7 +66,7 @@ class EmbedLayouts(Embed):
             try:
                 self.box = LayoutBox(window, usehello=True)
                 grid = Gtk.Grid()
-                grid.set_margin_left(15)
+                grid.set_margin_start(15)
                 image = Gtk.Image(stock=Gtk.STOCK_GO_BACK)
                 backBtn=Gtk.Button(label=None, image=image)
                 backBtn.set_name("home")
@@ -86,13 +86,18 @@ class EmbedBrowser(Embed):
     """Application-utility"""
     def load(self, window: Gtk.Window) -> bool:
         try:
+            from application_utility import application_utility
+            from application_utility.translation import i18n
             from application_utility.browser.application_browser import ApplicationBrowser
             from application_utility.browser.exceptions import NoAppInIsoError
+            from application_utility.browser import alpm
+            from application_utility.browser import data
             from application_utility.config.hello_config import HelloConfig
             try:
                 conf = HelloConfig(application="manjaro-hello")
                 grid = Gtk.Grid()
-                grid.set_margin_left(5)
+                grid.set_margin_start(5)
+                grid.set_margin_end(5)
                 grid.set_margin_top(5)
                 grid.set_margin_bottom(5)
                 image = Gtk.Image(stock=Gtk.STOCK_GO_BACK)
@@ -184,7 +189,7 @@ class Hello(Gtk.Window):
             backBtn=Gtk.Button(label=None, image=image)
             backBtn.set_name("home")
             backBtn.connect("clicked", self.on_btn_clicked)
-            
+
             grid = Gtk.Grid()
             grid.attach (backBtn, 0, 1, 1, 1)
             grid.attach(label, 1, 2, 1, 1)
@@ -236,7 +241,9 @@ class Hello(Gtk.Window):
         elif self.save["locale"] == self.preferences["default_locale"]:
             return self.preferences["default_locale"]
         else:
-            sys_locale = locale.getdefaultlocale()[0]
+            locale.setlocale(locale.LC_ALL, '')
+            sys_locale = locale.getlocale()[0]
+
             # If user's locale is supported
             if os.path.isfile(path.format(sys_locale)):
                 if "_" in sys_locale:
@@ -460,5 +467,7 @@ def get_lsb_infos():
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     hello = Hello()
+    hello.connect('delete-event', Gtk.main_quit)
     hello.connect("destroy", Gtk.main_quit)
     Gtk.main()
+

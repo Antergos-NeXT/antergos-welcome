@@ -1,27 +1,27 @@
 {
-    "default_locale": "en",
     "autostart_path": "~/.config/autostart/manjaro-hello.desktop",
-    "data_path": "/usr/share/manjaro-hello/data/",
+    "data_path": "/usr/share/manjaro/manjaro-hello",
+    "default_locale": "en",
     "desktop_path": "/usr/share/applications/manjaro-hello.desktop",
-    "installer_path": "/usr/bin/calamares",
-    "rescue_path": "/usr/bin/manjaro-rescue",
-    "plasmawelcome_path": "/usr/bin/plasma-welcome",
     "gnometour_path": "/usr/bin/gnome-tour",
+    "installer_path": "/usr/bin/calamares",
     "live_path": "/run/miso/bootmnt/manjaro",
-    "locale_path": "/usr/share/locale/",
+    "locale_path": "/usr/share/locale",
     "logo_path": "/usr/share/icons/hicolor/64x64/apps/manjaro.png",
+    "plasmawelcome_path": "/usr/bin/plasma-welcome",
+    "rescue_path": "/usr/bin/manjaro-rescue",
     "save_path": "~/.config/manjaro-hello.json",
-    "ui_path": "/usr/share/manjaro-hello/ui/manjaro-hello.glade",
-    "style_path": "/usr/share/manjaro-hello/ui/style.css",
+    "style_path": "/usr/share/manjaro/manjaro-hello/style.css",
+    "ui_path": "/usr/share/manjaro/manjaro-hello/manjaro-hello.glade",
     "urls": {
         "development": "https://gitlab.manjaro.org",
         "donate": "https://manjaro.org/donate",
         "facebook": "https://facebook.com/ManjaroLinux",
         "forum": "https://forum.manjaro.org",
-        "youtube": "https://youtube.com/@manjaro-linux",
         "mailling": "https://lists.manjaro.org/pipermail/",
+        "youtube": "https://youtube.com/@manjaro-linux",
         "reddit": "https://reddit.com/r/Manjaro",
-        "x": "https://x.com/ManjaroLinux",
-        "wiki": "https://wiki.manjaro.org"
+        "wiki": "https://wiki.manjaro.org",
+        "x": "https://x.com/ManjaroLinux"
     }
 }

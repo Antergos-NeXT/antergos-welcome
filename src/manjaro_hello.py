@@ -16,6 +16,10 @@ import webbrowser
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf, Gdk
 
+_SHARE_MANJARO = "/usr/share/manjaro"
+_HELLO_DATA_DIR = f"{_SHARE_MANJARO}/manjaro-hello"
+_HELLO_PREF_FILE = f"{_HELLO_DATA_DIR}/preferences.json"
+
 
 class EmbedManager:
     """manage included applications"""
@@ -62,23 +66,25 @@ class EmbedLayouts(Embed):
     """GNOME Layout Switcher"""
     def load(self, window: Gtk.Window) -> bool:
         try:
+            # import layoutswitcherlib
             from layoutswitcherlib.layoutsbox import LayoutBox
             try:
                 self.box = LayoutBox(window, usehello=True)
                 grid = Gtk.Grid()
                 grid.set_margin_start(15)
                 image = Gtk.Image(stock=Gtk.STOCK_GO_BACK)
-                backBtn=Gtk.Button(label=None, image=image)
-                backBtn.set_name("home")
-                backBtn.connect("clicked", self.on_btn_clicked,window)
-                grid.attach (backBtn, 0, 0, 1, 1)
+                back_btn=Gtk.Button(label=None, image=image)
+                back_btn.set_name("home")
+                back_btn.connect("clicked", self.on_btn_clicked,window)
+                grid.attach (back_btn, 0, 0, 1, 1)
                 self.box.pack_start(grid, expand=False, fill=False, padding=10)
                 self.box.reorder_child(grid,0)
-                self.box.show_all();
+                self.box.show_all()
             except Exception as err:
-                print("Error in Embled application:", err)
-        except ModuleNotFoundError as err:
-            print(f"Info: gnome-layout-switcher not installed")
+                logging.error("Error in embedded application -> 'layoutswitcherlib'")
+                logging.error(err)
+        except ModuleNotFoundError:
+            logging.info(f"Plugin 'layoutswitcherlib' not available.")
         self.loaded = self.box is not None
         return self.loaded
 
@@ -101,19 +107,20 @@ class EmbedBrowser(Embed):
                 grid.set_margin_top(5)
                 grid.set_margin_bottom(5)
                 image = Gtk.Image(stock=Gtk.STOCK_GO_BACK)
-                backBtn=Gtk.Button(label=None, image=image)
-                backBtn.set_name("home")
-                backBtn.connect("clicked", self.on_btn_clicked,window)
-                grid.attach (backBtn, 0, 1, 1, 1)
+                back_btn=Gtk.Button(label=None, image=image)
+                back_btn.set_name("home")
+                back_btn.connect("clicked", self.on_btn_clicked,window)
+                grid.attach (back_btn, 0, 1, 1, 1)
                 app=ApplicationBrowser(conf, window)
                 app.info_bar_appstream.pack_start(grid, expand=False, fill=False, padding=10)
                 app.info_bar_appstream.reorder_child(grid,0)
                 app.show_all()
                 self.box = app
             except Exception as err:
-                print("Error in Embled application:", err)
+                logging.error("Error in embedded application -> 'application-utility'")
+                logging.error(err)
         except ModuleNotFoundError as err:
-            print(f"Info: Application-utility not installed")
+            logging.info(f"Plugin 'application-utility' not available.")
         self.loaded = self.box is not None
         return self.loaded
 
@@ -129,22 +136,22 @@ class Hello(Gtk.Window):
         self.dev = "--dev" in sys.argv
         if self.dev:
             # dont load hardcoded path in devmode
-            path = os.getcwd()
-            parent = os.path.abspath(os.path.join(path, os.pardir))
-            data = f"{parent}/data/"
-            ui = f"{parent}/ui/"
-            self.preferences = read_json(f"{data}preferences.json")
-            self.preferences["data_path"] = f"{data}"
-            self.preferences["desktop_path"] = f"{parent}/{self.app}.desktop"
-            self.preferences["locale_path"] = f"{parent}/locale/"
-            self.preferences["ui_path"] = f"{ui}{self.app}.glade"
-            self.preferences["style_path"] = f"{ui}style.css"
+            project_dir = os.getcwd()
+            self.preferences = read_json(f"{project_dir}/data/preferences.json")
+            self.preferences["data_path"] = f"{project_dir}/data"
+            self.preferences["desktop_path"] = f"{project_dir}/{self.app}.desktop"
+            self.preferences["locale_path"] = f"{project_dir}/locale"
+            self.preferences["ui_path"] = f"{project_dir}/ui/{self.app}.glade"
+            self.preferences["style_path"] = f"{project_dir}/ui/style.css"
+            logging.debug(f"Using dev preferences: {self.preferences}")
         else:
-            self.preferences = read_json(f"/usr/share/{self.app}/data/preferences.json")
+            self.preferences = read_json(f"{_HELLO_PREF_FILE}")
+            logging.debug(f"Using system preferences: {self.preferences}")
+
         # Get saved infos
-        self.save = read_json(self.preferences["save_path"])
-        if not self.save:
-            self.save = {"locale": None}
+        self.usr_prefs = read_json(self.preferences["save_path"])
+        if not self.usr_prefs:
+            self.usr_prefs = {"locale": None}
 
         # Import Css
         provider = Gtk.CssProvider()
@@ -167,31 +174,31 @@ class Hello(Gtk.Window):
             self.builder.get_object("aboutdialog").set_logo(logo)
 
         for btn in self.builder.get_object("social").get_children():
-            icon_path = self.preferences["data_path"] + "img/" + btn.get_name() + ".png"
+            icon_path = self.preferences["data_path"] + "/img/" + btn.get_name() + ".png"
             self.builder.get_object(btn.get_name()).set_from_file(icon_path)
 
         for widget in self.builder.get_object("homepage").get_children():
             if isinstance(widget, Gtk.Button) and \
                     widget.get_image_position() is Gtk.PositionType.RIGHT:
                 img = Gtk.Image.new_from_file(
-                    self.preferences["data_path"] + "img/external-link.png")
+                    self.preferences["data_path"] + "/img/external-link.png")
                 img.set_margin_start(2)
                 widget.set_image(img)
 
         # Create pages
-        self.pages = os.listdir("{}/pages/{}".format(self.preferences["data_path"],
-                                                     self.preferences["default_locale"]))
+        # load pageas for language
+        self.pages = os.listdir(f"/{self.preferences["data_path"]}/pages/{self.preferences["default_locale"]}")
         for page in self.pages:
             scrolled_window = Gtk.ScrolledWindow()
             viewport = Gtk.Viewport(border_width=10)
             label = Gtk.Label(wrap=True)
             image = Gtk.Image(stock=Gtk.STOCK_GO_BACK)
-            backBtn=Gtk.Button(label=None, image=image)
-            backBtn.set_name("home")
-            backBtn.connect("clicked", self.on_btn_clicked)
+            back_btn=Gtk.Button(label=None, image=image)
+            back_btn.set_name("home")
+            back_btn.connect("clicked", self.on_btn_clicked)
 
             grid = Gtk.Grid()
-            grid.attach (backBtn, 0, 1, 1, 1)
+            grid.attach (back_btn, 0, 1, 1, 1)
             grid.attach(label, 1, 2, 1, 1)
             viewport.add(grid)
             scrolled_window.add(viewport)
@@ -200,7 +207,7 @@ class Hello(Gtk.Window):
 
         # Init translation
         self.default_texts = {}
-        gettext.bindtextdomain(self.app, self.preferences["locale_path"])
+        gettext.bindtextdomain(self.app, f"{self.preferences["locale_path"]}/")
         gettext.textdomain(self.app)
         self.builder.get_object("languages").set_active_id(self.get_best_locale())
 
@@ -209,10 +216,16 @@ class Hello(Gtk.Window):
         self.builder.get_object("autostart").set_active(self.autostart)
 
         # Live systems
-        if os.path.exists(self.preferences["live_path"]) and os.path.isfile(self.preferences["installer_path"]):
+        if (os.path.exists(self.preferences["live_path"]) and
+                os.path.isfile(self.preferences["installer_path"])):
+            # show install label
             self.builder.get_object("installlabel").set_visible(True)
+            # show install button
             self.builder.get_object("install").set_visible(True)
-            if os.path.exists(self.preferences["live_path"]) and os.path.isfile(self.preferences["rescue_path"]):
+            # check if manjaro system rescue is installed
+            if (os.path.exists(self.preferences["live_path"]) and
+                    os.path.isfile(self.preferences["rescue_path"])):
+                # show grub-rescue button
                 self.builder.get_object("rescue").set_visible(True)
         # Installed systems
         else:
@@ -220,27 +233,33 @@ class Hello(Gtk.Window):
             manager.get_modules(self)
             manager.display(self)
             de = os.environ.get("DESKTOP_SESSION", "unknown")
-
+            # check desktop plasma or gnome
             if de == "plasma" and os.path.isfile(self.preferences["plasmawelcome_path"]):
+                # enable Plasma Welcome button
                 self.builder.get_object("deWelcome").set_visible(True)
                 self.builder.get_object("deWelcome").set_label("Plasma Welcome")
             elif de == "gnome" and os.path.isfile(self.preferences["gnometour_path"]):
+                # enable Gnome Tour button
                 self.builder.get_object("deWelcome").set_visible(True)
                 self.builder.get_object("deWelcome").set_label("GNOME Tour")
 
         self.window.show()
 
     def get_best_locale(self):
-        """Choose best locale, based on user's preferences.
+        """Choose locale, based on user's preferences.
         :return: locale to use
         :rtype: str
         """
-        path = self.preferences["locale_path"] + "{}/LC_MESSAGES/" + self.app + ".mo"
-        if os.path.isfile(path.format(self.save["locale"])):
-            return self.save["locale"]
-        elif self.save["locale"] == self.preferences["default_locale"]:
+        path = f"{self.preferences["locale_path"]}/LC_MESSAGES/{self.app}*.mo"
+
+        if os.path.isfile(path.format(self.usr_prefs["locale"])):
+            # return usr_preference
+            return self.usr_prefs["locale"]
+        elif self.usr_prefs["locale"] == self.preferences["default_locale"]:
+            # return default
             return self.preferences["default_locale"]
         else:
+            # decide which locale to use
             locale.setlocale(locale.LC_ALL, '')
             sys_locale = locale.getlocale()[0]
 
@@ -262,13 +281,15 @@ class Hello(Gtk.Window):
         :type use_locale: str
         """
         try:
-            translation = gettext.translation(self.app, self.preferences[
-                "locale_path"], [use_locale], fallback=True)
+            translation = gettext.translation(self.app,
+                                              self.preferences["locale_path"],
+                                              [use_locale],
+                                              fallback=True)
             translation.install()
         except OSError:
             return
 
-        self.save["locale"] = use_locale
+        self.usr_prefs["locale"] = use_locale
 
         # Real-time locale changing
 
@@ -319,7 +340,7 @@ class Hello(Gtk.Window):
 
     def set_autostart(self, autostart):
         """Set state of autostart.
-        :param autostart: wanted autostart state
+        :param autostart: wanted auto start state
         :type autostart: bool
         """
         try:
@@ -351,10 +372,9 @@ class Hello(Gtk.Window):
         :return: text to load
         :rtype: str
         """
-        filename = self.preferences["data_path"] + "pages/{}/{}".format(self.save["locale"], name)
+        filename = f"{self.preferences["data_path"]}/pages/{self.usr_prefs["locale"]}/{name}"
         if not os.path.isfile(filename):
-            filename = self.preferences["data_path"] + \
-                       "pages/{}/{}".format(self.preferences["default_locale"], name)
+            f"{self.preferences["data_path"]}/pages/{self.usr_prefs["default_locale"]}/{name}"
         try:
             with open(filename, "r") as fil:
                 return fil.read()
@@ -398,7 +418,7 @@ class Hello(Gtk.Window):
 
     def on_delete_window(self, *args):
         """Event to quit app."""
-        write_json(self.preferences["save_path"], self.save)
+        write_json(self.preferences["save_path"], self.usr_prefs)
         Gtk.main_quit(*args)
 
 
@@ -414,7 +434,7 @@ def fix_path(path):
     return path
 
 
-def read_json(path):
+def read_json(path) -> dict or None:
     """Read content of a json file.
     :param path: path to read
     :type path: str
@@ -445,7 +465,7 @@ def write_json(path, content):
 
 
 def get_lsb_infos():
-    """Read informations from the lsb-release file.
+    """Read information from the lsb-release file.
     :return: args from lsb-release file
     :rtype: dict"""
     lsb = {}
@@ -465,7 +485,7 @@ def get_lsb_infos():
 
 
 if __name__ == "__main__":
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.INFO)
     hello = Hello()
     hello.connect('delete-event', Gtk.main_quit)
     hello.connect("destroy", Gtk.main_quit)

@@ -374,7 +374,7 @@ class Hello(Gtk.Window):
         """
         filename = f"{self.preferences["data_path"]}/pages/{self.usr_prefs["locale"]}/{name}"
         if not os.path.isfile(filename):
-            f"{self.preferences["data_path"]}/pages/{self.preferences["default_locale"]/{name}"
+            f"{self.preferences["data_path"]}/pages/{self.preferences["default_locale"]}/{name}"
         try:
             with open(filename, "r") as fil:
                 return fil.read()

@@ -250,7 +250,7 @@ class Hello(Gtk.Window):
         :return: locale to use
         :rtype: str
         """
-        path = f"{self.preferences["locale_path"]}/LC_MESSAGES/{self.app}*.mo"
+        path = self.preferences["locale_path"] + "/{}/LC_MESSAGES/" + self.app + ".mo"
 
         if os.path.isfile(path.format(self.usr_prefs["locale"])):
             # return usr_preference

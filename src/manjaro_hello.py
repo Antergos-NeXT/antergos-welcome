@@ -250,7 +250,7 @@ class Hello(Gtk.Window):
         :return: locale to use
         :rtype: str
         """
-        path = f"{self.preferences["locale_path"]}/LC_MESSAGES/{self.app}*.mo"
+        path = self.preferences["locale_path"] + "/{}/LC_MESSAGES/" + self.app + ".mo"
 
         if os.path.isfile(path.format(self.usr_prefs["locale"])):
             # return usr_preference
@@ -374,7 +374,7 @@ class Hello(Gtk.Window):
         """
         filename = f"{self.preferences["data_path"]}/pages/{self.usr_prefs["locale"]}/{name}"
         if not os.path.isfile(filename):
-            f"{self.preferences["data_path"]}/pages/{self.usr_prefs["default_locale"]}/{name}"
+            f"{self.preferences["data_path"]}/pages/{self.preferences["default_locale"]}/{name}"
         try:
             with open(filename, "r") as fil:
                 return fil.read()

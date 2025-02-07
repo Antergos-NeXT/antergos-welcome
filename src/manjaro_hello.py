@@ -72,7 +72,7 @@ class EmbedLayouts(Embed):
                 self.box = LayoutBox(window, usehello=True)
                 grid = Gtk.Grid()
                 grid.set_margin_start(15)
-                image = Gtk.Image(stock=Gtk.STOCK_GO_BACK)
+                image = get_icon_image("go-previous", Gtk.IconSize.BUTTON)
                 back_btn=Gtk.Button(label=None, image=image)
                 back_btn.set_name("home")
                 back_btn.connect("clicked", self.on_btn_clicked,window)
@@ -106,7 +106,7 @@ class EmbedBrowser(Embed):
                 grid.set_margin_end(5)
                 grid.set_margin_top(5)
                 grid.set_margin_bottom(5)
-                image = Gtk.Image(stock=Gtk.STOCK_GO_BACK)
+                image = get_icon_image("go-previous", Gtk.IconSize.BUTTON)
                 back_btn=Gtk.Button(label=None, image=image)
                 back_btn.set_name("home")
                 back_btn.connect("clicked", self.on_btn_clicked,window)
@@ -192,7 +192,7 @@ class Hello(Gtk.Window):
             scrolled_window = Gtk.ScrolledWindow()
             viewport = Gtk.Viewport(border_width=10)
             label = Gtk.Label(wrap=True)
-            image = Gtk.Image(stock=Gtk.STOCK_GO_BACK)
+            image = get_icon_image("go-previous", Gtk.IconSize.BUTTON)
             back_btn=Gtk.Button(label=None, image=image)
             back_btn.set_name("home")
             back_btn.connect("clicked", self.on_btn_clicked)
@@ -483,6 +483,16 @@ def get_lsb_infos():
         return 'not Manjaro', '0.0'
     return lsb["CODENAME"], lsb["RELEASE"]
 
+def get_icon_image(icon_name, icon_size):
+    icon_theme = Gtk.IconTheme.get_default()
+
+    if icon_theme.has_icon(icon_name):
+        pixbuf = icon_theme.load_icon(icon_name, icon_size, 0)
+        if pixbuf:
+            return Gtk.Image.new_from_pixbuf(pixbuf)
+        else:
+            return Gtk.Image.new_from_icon_name(icon_name, icon_size)
+    return None
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)

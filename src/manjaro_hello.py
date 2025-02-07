@@ -112,8 +112,8 @@ class EmbedBrowser(Embed):
                 back_btn.connect("clicked", self.on_btn_clicked,window)
                 grid.attach (back_btn, 0, 1, 1, 1)
                 app=ApplicationBrowser(conf, window)
-                app.info_bar_appstream.pack_start(grid, expand=False, fill=False, padding=10)
-                app.info_bar_appstream.reorder_child(grid,0)
+                app.app_browser_box.pack_start(grid, expand=False, fill=False, padding=10)
+                app.app_browser_box.reorder_child(grid,0)
                 app.show_all()
                 self.box = app
             except Exception as err:

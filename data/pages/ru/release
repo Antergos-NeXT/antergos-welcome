@@ -1,30 +1,28 @@
-<big>Manjaro 24.2</big>
+<big>Manjaro 25.0</big>
 
-Since we released Xahea in October 2024 we worked hard to get the next release of Manjaro out there. We call it Yonada.
+Since we released Yonada in December 2024 we worked hard to get the next release of Manjaro out there. We call it Zetar.
 
-The <big>GNOME edition</big> has received several updates to Gnome 47 series. This includes a lot of fixes and polish when <a href="https://release.gnome.org/47/">Gnome 47</a> originally was released in September 2024. You can find the changes made to each point-release here: <a href="https://download.gnome.org/core/47/47.1/NEWS">47.1</a>, <a href="https://download.gnome.org/core/47/47.2/NEWS">47.2</a>.
+The <big>GNOME edition</big> has received several updates to Gnome 48 series. This includes a lot of fixes and polish when <a href="https://release.gnome.org/48/">Gnome 48</a> originally was released in March 2025. You can find find release dates of each upcoming point-release here: <a href="https://release.gnome.org/calendar/">Release Calendar</a>. Weekly updates around GNOME can be found <a href="https://thisweek.gnome.org/">here</a>.
 
-Highlights of 47 release series are:
+Highlights of 48 release series are:
 
-Accent colors have finally arrived! This new option allows customization of the existing blue accent color which is used throughout GNOME’s interfaces, with a range of fantastic alternative accent colors to choose from. Just select one from the Appearance settings, and it will be automatically used throughout the system and apps.
+GNOME 48 introduces stacking to the notification list. Notifications from the same app are grouped into stacks, each of which can be expanded to reveal individual messages. Stacking keeps the notification list organized and makes it easier to navigate. It also prevents the notification list from becoming too long.
 
-GNOME 47 enhances the user experience on screens with lower resolutions by optimizing how icons and interface elements are rendered. In previous versions, users with lower-resolution displays might have noticed that icons appeared too small or difficult to interact with. With this update, GNOME automatically scales icons to appear larger and more visually accessible on such screens.
+GNOME 48 includes a number of notable performance improvements. The most significant of these is the introduction of dynamic triple buffering. This change has undergone significant review and testing over a period of five years and improves the perceived smoothness of changes on screen, with fewer skipped frames and more fluid animations. This has been achieved by enhancing the concurrency capabilities of Mutter, the GNOME display manager, and is particularly effective at handling sudden bursts of activity.
 
-GNOME 47 introduces support for hardware encoding on Intel and AMD GPUs when recording the screen. This significantly reduces the strain on your system during screen recording. As a result, you’ll experience smoother performance with less impact on system resources, making it easier to capture high-quality screen captures without compromising the responsiveness of your desktop or other running applications. Whether you’re creating tutorials, recording gameplay, this improvement ensures a more efficient and seamless screen capture experience.
+GNOME 48 includes a new option which enhances the lifespan of the device’s battery. When enabled, battery charge is limited to 80% while the device is plugged in. Maintaining the battery charge level at this reduced level keeps the battery working better for longer.
 
-GNOME’s remote desktop support has improved for version 47, with the addition of persistent remote login sessions. If you happen to be disconnected from a remote login session, it will now continue, so that it is possible to log back in and continue from where you left off, with the system in the same state as when you left it.
+GNOME 48 is an important milestone for HDR support in GNOME, with the initial introduction of system level HDR support. This means that, if you have an HDR display, it is now possible to have HDR output shown from apps which support it. Currently the number of apps which support HDR is limited. However, work to extend HDR support is ongoing, and the availability of this feature is expected to increase in the future.
 
-GNOME 47 introduces improvements to Files search, by providing more contextual information about search performance. If any factors are affecting search results, such as if the location is not indexed or if it is a remote directory, then a new button is shown in the search bar, which shows information about the current search context. This added context helps users understand why certain searches might be slower or incomplete. It also allows users to update their search settings to get the best experience.
+The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/6/6.3.4//">Plasma 6.3 series</a>, <a href="https://kde.org/announcements/frameworks/6/6.12.0/">Frameworks 6.12</a> and <a href="https://kde.org/announcements/gear/24.12.3/">KDE Gear 24.12</a>. It brings exciting new improvements to your desktop.
 
-The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/6/6.1.4/">Plasma 6.2 series</a>, <a href="https=://kde.org/announcements/frameworks/6/6.8.0/">Frameworks 6.8</a> and <a href="https://kde.org/announcements/gear/24.08.3/">KDE Gear 24.08</a>. It brings exciting new improvements to your desktop.
+One year on Plasma’s developers have worked on fine-tuning, squashing bugs and adding features to Plasma 6 — turning it into the best desktop environment for everyone!
 
-Plasma 6 has come into its own over the last two releases. The wrinkles that always come with a major migration have been ironed out, and it’s time to start delivering on the promises of the new Qt 6 and Wayland technology platforms that Plasma is built on top of. One of the outstanding issues has been to make Plasma a more artist-friendly environment by providing full support for the hardware that creative people need to get their work done.
+The most important news regarding graphics is a huge overhaul of how fractional scaling works. In Plasma 6.3, KWin makes a stronger effort to snap things to the screen’s pixel grid, greatly reducing blurriness and visual gaps everywhere and producing sharper and crisper images. In the color department, screen colors are more accurate when using the Night Light feature both with and without ICC profiles, and KWin offers the option to choose screen color accuracy — although this can sometimes affect system performance.
 
-Plasma 6.2 includes a smorgasbord of new features for users of drawing tablets. Open System Settings and look for Drawing Tablet to see various tools for configuring drawing tablets. To ensure consistent colors across monitors, a more complete support for the Wayland color management protocol was implemented, and enabled by default.
+System Monitor monitors CPU usage more accurately, and consumes vastly fewer CPU resources while doing it! Info Center also provides more information, exposing data about all of your GPUs as well as your batteries’ cycle counts. Monitoring printers is equally easy, as each printer’s print queue is shown directly in the widget. The widget also shows a little spinner on any printers that are currently printing, so you can see at a glance which ones are in use. Plasma 6.3 makes things easy without ditching flexibility. If you prefer using a mouse with your laptop, you can now configure its built-in touchpad to switch off automatically, so it doesn’t interfere with your typing. Also, if you set up your machine as a network hotspot, Plasma generates a random password for the network so you don’t have to think one up.
 
-Managing how much energy your system consumes and when are not only important for preserving its resources for when you need them, but also for using it in an environmentally responsible way. You can now override misbehaving applications that block the system from going to sleep or locking the screen (and thus prevent saving power), and you can also adjust the brightness of each connected monitor machine separately.
-
-In Plasma 6.2, we overhauled System Settings’ Accessibility page and added colorblindness filters. We also added support for the full “sticky keys” feature on Wayland. Accent colors and the System Tray got tweaked, the Widget Explorer reworked, and the look of dialogs and pop-ups unified. Finally, the Welcome Center, sound effects, and actions got improved.
+Finally, what would Plasma be without customization? Panels can now be cloned! You can also use scripting to change your panels’ opacity levels and what screen they appear on.
 
 With our <big>XFCE edition</big>, we have now Xfce 4.18. Here some highlights: A new file highlighting feature (accessed from the file properties dialog) in Thunar file manager lets you set a custom colour background and a custom foreground text colour – an effective way to call attention to specific file(s) in a directory laden with similar-looking mime types. On the subject of finding files, Thunar includes recursive search.
 
@@ -34,4 +32,4 @@ Control Centre groups all of the desktop’s various modules for managing the sy
 
 Kernel 6.12 is used for this release, such as the latest drivers available to date. With 6.6 LTS and 6.1 LTS we offer additional support for older hardware as needed.
 
-We hope you enjoy this release and let us know what you think of Yonada.
+We hope you enjoy this release and let us know what you think of Zetar.

@@ -1,28 +1,32 @@
-<big>Manjaro 25.0</big>
+<big>Manjaro 25.1</big>
 
-Since we released Yonada in December 2024 we worked hard to get the next release of Manjaro out there. We call it Zetar.
+Since we released Zetar in April 2025 we worked hard to get the next release of Manjaro out there. We call it Anh-Linh.
 
-The <big>GNOME edition</big> has received several updates to Gnome 48 series. This includes a lot of fixes and polish when <a href="https://release.gnome.org/48/">Gnome 48</a> originally was released in March 2025. You can find find release dates of each upcoming point-release here: <a href="https://release.gnome.org/calendar/">Release Calendar</a>. Weekly updates around GNOME can be found <a href="https://thisweek.gnome.org/">here</a>.
+The <big>GNOME edition</big> has received several updates to Gnome 49 series. This includes a lot of fixes and polish when <a href="https://release.gnome.org/49/">Gnome 49</a> originally was released in September 2025. You can find find release dates of each upcoming point-release here: <a href="https://release.gnome.org/calendar/">Release Calendar</a>. Weekly updates around GNOME can be found <a href="https://thisweek.gnome.org/">here</a>.
 
-Highlights of 48 release series are:
+Highlights of 49 release series are:
 
-GNOME 48 introduces stacking to the notification list. Notifications from the same app are grouped into stacks, each of which can be expanded to reveal individual messages. Stacking keeps the notification list organized and makes it easier to navigate. It also prevents the notification list from becoming too long.
+Calendar sees a number of improvements in GNOME 49. The most visible change is the reorganized interface, which is now more flexible, and allows the window to adapt to different window sizes. It also makes it possible to manually hide the sidebar, which is ideal for smaller screens or tiled windows.
 
-GNOME 48 includes a number of notable performance improvements. The most significant of these is the introduction of dynamic triple buffering. This change has undergone significant review and testing over a period of five years and improves the perceived smoothness of changes on screen, with fewer skipped frames and more fluid animations. This has been achieved by enhancing the concurrency capabilities of Mutter, the GNOME display manager, and is particularly effective at handling sudden bursts of activity.
+Version 49 of the Software app focuses heavily on performance improvements. One major bottleneck has been how the app store parses large amounts of data from Flatpak repositories like Flathub. This release introduces optimizations that greatly reduce memory usage and speed up the parsing process. The result is a snappier, more responsive experience when browsing and searching for apps, especially on systems with limited resources.
 
-GNOME 48 includes a new option which enhances the lifespan of the device’s battery. When enabled, battery charge is limited to 80% while the device is plugged in. Maintaining the battery charge level at this reduced level keeps the battery working better for longer.
+GNOME 49 introduces a vibrant new wallpaper catalog that’s specifically engineered for high‑dynamic‑range (HDR) displays and the Display P3 color space. These HDR beautiful wallpapers are possible due to enhanced color-management in GNOME’s window manager (Mutter), which allows it to render wallpapers with their full 16‑bit‑per‑channel RGB depth, giving an unprecedented range of colors and contrast. Image loading backend (Glycin) has also been improved with regard to performance of the color-managed pipelines.
 
-GNOME 48 is an important milestone for HDR support in GNOME, with the initial introduction of system level HDR support. This means that, if you have an HDR display, it is now possible to have HDR output shown from apps which support it. Currently the number of apps which support HDR is limited. However, work to extend HDR support is ongoing, and the availability of this feature is expected to increase in the future.
+GNOME’s built-in remote desktop capabilities have been extended for version 49, providing more capabilities for those connecting to their GNOME desktops from elsewhere.
 
-The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/6/6.3.4//">Plasma 6.3 series</a>, <a href="https://kde.org/announcements/frameworks/6/6.12.0/">Frameworks 6.12</a> and <a href="https://kde.org/announcements/gear/24.12.3/">KDE Gear 24.12</a>. It brings exciting new improvements to your desktop.
+The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/6/6.5.3/">Plasma 6.5 series</a>, <a href="https://kde.org/announcements/frameworks/6/6.20.0/">Frameworks 6.20</a> and <a href="https://kde.org/announcements/gear/25.12.0/">KDE Gear 25.12</a>. It brings exciting new improvements to your desktop.
 
-One year on Plasma’s developers have worked on fine-tuning, squashing bugs and adding features to Plasma 6 — turning it into the best desktop environment for everyone!
+Plasma 6.5 includes a number of highly-requested features:
 
-The most important news regarding graphics is a huge overhaul of how fractional scaling works. In Plasma 6.3, KWin makes a stronger effort to snap things to the screen’s pixel grid, greatly reducing blurriness and visual gaps everywhere and producing sharper and crisper images. In the color department, screen colors are more accurate when using the Night Light feature both with and without ICC profiles, and KWin offers the option to choose screen color accuracy — although this can sometimes affect system performance.
+First up: rounded bottom window corners! Breeze-themed windows will now have the same level of roundness in all four corners. If you don’t like this, you can un-round them, too. Another one is automatic light-to-dark theme switching based on the time of day. You can configure which global themes it switches between, and also which themes are shown on the manual toggles on System Settings’ Quick Settings page. As a part of this feature, you can also configure whether you want the wallpaper to switch between its light and dark versions based on the color scheme, the time of day, or be always light or dark.
 
-System Monitor monitors CPU usage more accurately, and consumes vastly fewer CPU resources while doing it! Info Center also provides more information, exposing data about all of your GPUs as well as your batteries’ cycle counts. Monitoring printers is equally easy, as each printer’s print queue is shown directly in the widget. The widget also shows a little spinner on any printers that are currently printing, so you can see at a glance which ones are in use. Plasma 6.3 makes things easy without ditching flexibility. If you prefer using a mouse with your laptop, you can now configure its built-in touchpad to switch off automatically, so it doesn’t interfere with your typing. Also, if you set up your machine as a network hotspot, Plasma generates a random password for the network so you don’t have to think one up.
+The Flatpak Permissions page got transformed into a general Application Permissions page, where you can configure apps’ ability to do things like take screenshots and accept remote control requests.
 
-Finally, what would Plasma be without customization? Panels can now be cloned! You can also use scripting to change your panels’ opacity levels and what screen they appear on.
+Plasma’s built in Remote Desktop Protocol (RDP) server now lets you share the clipboard. You’re also no longer required to manually create separate remote desktop accounts; now the system’s existing user accounts work as expected, and you can just supply their credentials to the RDP client app.
+
+The utility that reads the level of ink or toner from your printer now informs you when it’s running low or empty.
+
+And finally, you can now hibernate your system from the login screen.
 
 With our <big>XFCE edition</big>, we have now Xfce 4.18. Here some highlights: A new file highlighting feature (accessed from the file properties dialog) in Thunar file manager lets you set a custom colour background and a custom foreground text colour – an effective way to call attention to specific file(s) in a directory laden with similar-looking mime types. On the subject of finding files, Thunar includes recursive search.
 
@@ -30,6 +34,6 @@ The panel picks up a pair of new preferences. First, panel length is now configu
 
 Control Centre groups all of the desktop’s various modules for managing the system into one easy-to-use window. New options are present in many of these. For example you can disable header bars in dialogs from the Appearance module; show or hide a ‘delete’ option in file context menus from Desktop; and pick a default multi-monitor behaviour before you attach an additional screen – dead handy, that.
 
-Kernel 6.12 is used for this release, such as the latest drivers available to date. With 6.6 LTS and 6.1 LTS we offer additional support for older hardware as needed.
+Kernel 6.18 is used for this release, such as the latest drivers available to date. With 6.12 LTS and 6.6 LTS we offer additional support for older hardware as needed.
 
-We hope you enjoy this release and let us know what you think of Zetar.
+We hope you enjoy this release and let us know what you think of Anh-Linh.

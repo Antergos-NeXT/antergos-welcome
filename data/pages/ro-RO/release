@@ -28,7 +28,7 @@ The utility that reads the level of ink or toner from your printer now informs y
 
 And finally, you can now hibernate your system from the login screen.
 
-With our <big>XFCE edition</big>, we have now Xfce 4.18. Here some highlights: A new file highlighting feature (accessed from the file properties dialog) in Thunar file manager lets you set a custom colour background and a custom foreground text colour – an effective way to call attention to specific file(s) in a directory laden with similar-looking mime types. On the subject of finding files, Thunar includes recursive search.
+With our <big>XFCE edition</big>, we have now Xfce 4.20. Here some highlights: A new file highlighting feature (accessed from the file properties dialog) in Thunar file manager lets you set a custom colour background and a custom foreground text colour – an effective way to call attention to specific file(s) in a directory laden with similar-looking mime types. On the subject of finding files, Thunar includes recursive search.
 
 The panel picks up a pair of new preferences. First, panel length is now configured in pixels rather than percentages, as before. Second, there’s a new “keep panel above windows” option. This allows maximised app windows to fill the area behind the panel rather than maximise its bottom or top edge to sit flush against it.
 

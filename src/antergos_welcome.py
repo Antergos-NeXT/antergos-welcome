@@ -240,6 +240,17 @@ class Hello(Gtk.Window):
                 self.builder.get_object("deWelcome").set_label("GNOME Tour")
 
         self.window.show()
+        self.play_welcome_song()
+
+    def play_welcome_song(self):
+        song = "/usr/share/cnchi-memes/its-raining-tacos.opus"
+        if os.path.isfile(song):
+            try:
+                subprocess.Popen(["mpv", "--really-quiet", "--volume=55", song],
+                               stdout=subprocess.DEVNULL,
+                               stderr=subprocess.DEVNULL)
+            except FileNotFoundError:
+                pass
 
     def get_best_locale(self):
         """Choose locale, based on user's preferences.

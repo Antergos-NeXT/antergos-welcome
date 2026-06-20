@@ -241,16 +241,49 @@ class Hello(Gtk.Window):
 
         self.window.show()
         self.play_welcome_song()
+        self.setup_mute_button()
 
     def play_welcome_song(self):
         song = "/usr/share/cnchi-memes/its-raining-tacos.opus"
+        self.mpv_process = None
         if os.path.isfile(song):
             try:
-                subprocess.Popen(["mpv", "--really-quiet", "--volume=55", song],
-                               stdout=subprocess.DEVNULL,
-                               stderr=subprocess.DEVNULL)
+                self.mpv_process = subprocess.Popen(
+                    ["mpv", "--really-quiet", "--volume=55", song],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL)
             except FileNotFoundError:
                 pass
+
+    def setup_mute_button(self):
+        mute_btn = self.builder.get_object("mute")
+        icon = Gtk.Image.new_from_icon_name("audio-volume-high", Gtk.IconSize.BUTTON)
+        mute_btn.set_image(icon)
+
+    def on_mute_clicked(self, btn):
+        if self.mpv_process and self.mpv_process.poll() is None:
+            self.mpv_process.terminate()
+            try:
+                self.mpv_process.wait(timeout=3)
+            except subprocess.TimeoutExpired:
+                self.mpv_process.kill()
+
+        btn.set_sensitive(False)
+        icon = Gtk.Image.new_from_icon_name("audio-volume-muted", Gtk.IconSize.BUTTON)
+        btn.set_image(icon)
+
+        dialog = Gtk.MessageDialog(
+            transient_for=self.window,
+            flags=0,
+            message_type=Gtk.MessageType.INFO,
+            buttons=Gtk.ButtonsType.OK,
+            text=":(",
+        )
+        dialog.format_secondary_text(
+            "You muted the welcome song...\n\nThe program is sad now."
+        )
+        dialog.run()
+        dialog.destroy()
 
     def get_best_locale(self):
         """Choose locale, based on user's preferences.

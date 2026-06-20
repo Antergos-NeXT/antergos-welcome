@@ -586,6 +586,19 @@ We, the Antergos NeXT Developers, hope that you will enjoy using Antergos NeXT a
         <property name="title">Antergos NeXT Hello</property>
         <property name="show-close-button">True</property>
         <child>
+          <object class="GtkButton" id="mute">
+            <property name="name">mute</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">True</property>
+            <property name="tooltip-text" translatable="yes">Mute welcome song</property>
+            <signal name="clicked" handler="on_mute_clicked" swapped="yes"/>
+          </object>
+          <packing>
+            <property name="pack-type">end</property>
+          </packing>
+        </child>
+        <child>
           <object class="GtkButton" id="about">
             <property name="name">about</property>
             <property name="visible">True</property>

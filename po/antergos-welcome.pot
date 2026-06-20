@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-20 19:50+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../ui/antergos-welcome.glade:52
+msgid "Welcome to Antergos NeXT!"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:68
+msgid ""
+"Thank you for joining our community!\n"
+"\n"
+"We, the Antergos NeXT Developers, hope that you will enjoy using Antergos "
+"NeXT as much as we enjoy building it. The links below will help you get "
+"started with your new operating system. So enjoy the experience, and don't "
+"hesitate to send us your feedback."
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:86
+msgid "DOCUMENTATION"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:100
+msgid "SUPPORT"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:114
+msgid "PROJECT"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:126
+msgid "Read me"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:140
+msgid "Release info"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:155
+msgid "Wiki"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:160 ../ui/antergos-welcome.glade:191
+#: ../ui/antergos-welcome.glade:208 ../ui/antergos-welcome.glade:225
+#: ../ui/antergos-welcome.glade:242
+msgid "Web resource"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:172
+msgid "Get involved"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:186
+msgid "Forums"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:203
+msgid "Mailing lists"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:220
+msgid "Development"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:237
+msgid "Donate"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:325
+msgid "Launch at start"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:359
+msgid "INSTALLATION"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:372
+msgid "Launch Cnchi Installer"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:393
+msgid "Applications"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:397
+msgid "Common application selection"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:408
+msgid "GNOME Layout Switcher"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:412
+msgid "Antergos NeXT GNOME config tool"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:424
+msgid "<dewelcome>"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:427
+msgid "Desktop Environent-specific Welcome"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:442
+msgid "Launch Calamares installer"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:594 ../ui/antergos-welcome.glade:607
+msgid "About"
+msgstr ""
+
+#: ../ui/antergos-welcome.glade:612
+msgid "Welcome screen for Antergos NeXT"
+msgstr ""
+
+#: ../src/antergos_welcome.py:378
+msgid "Can't load page."
+msgstr ""

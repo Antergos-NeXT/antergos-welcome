@@ -49,7 +49,7 @@
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="has-focus">True</property>
-                <property name="label" translatable="yes">Welcome to Manjaro!</property>
+                <property name="label" translatable="yes">Welcome to Antergos NeXT!</property>
                 <attributes>
                   <attribute name="weight" value="bold"/>
                   <attribute name="scale" value="2"/>
@@ -67,7 +67,7 @@
                 <property name="can-focus">False</property>
                 <property name="label" translatable="yes">Thank you for joining our community!
 
-We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback.</property>
+We, the Antergos NeXT Developers, hope that you will enjoy using Antergos NeXT as much as we enjoy building it. The links below will help you get started with your new operating system. So enjoy the experience, and don't hesitate to send us your feedback.</property>
                 <property name="justify">fill</property>
                 <property name="wrap">True</property>
                 <property name="width-chars">1</property>
@@ -354,6 +354,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkLabel" id="installlabel">
+                <property name="visible">False</property>
                 <property name="can-focus">False</property>
                 <property name="label" translatable="yes">INSTALLATION</property>
                 <attributes>
@@ -367,7 +368,8 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
             </child>
             <child>
               <object class="GtkButton" id="install">
-                <property name="label" translatable="yes">Launch installer</property>
+                <property name="visible">False</property>
+                <property name="label" translatable="yes">Launch Cnchi Installer</property>
                 <property name="name">install</property>
                 <property name="can-focus">False</property>
                 <property name="receives-default">True</property>
@@ -407,7 +409,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                     <property name="name">appLayouts</property>
                     <property name="can-focus">False</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text" translatable="yes">Manjaro GNOME config tool</property>
+                    <property name="tooltip-text" translatable="yes">Antergos NeXT GNOME config tool</property>
                     <signal name="clicked" handler="on_btn_clicked" swapped="yes"/>
                   </object>
                   <packing>
@@ -431,12 +433,13 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkButton" id="rescue">
-                    <property name="label">System Recovery</property>
-                    <property name="name">rescue</property>
+                  <object class="GtkButton" id="calamares">
+                    <property name="visible">False</property>
+                    <property name="label">Alternative Installer</property>
+                    <property name="name">calamares</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">True</property>
-                    <property name="tooltip-text">System Recovery</property>
+                    <property name="tooltip-text" translatable="yes">Launch Calamares installer</property>
                     <signal name="clicked" handler="on_action_clicked" swapped="yes"/>
                   </object>
                   <packing>
@@ -580,7 +583,7 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
       <object class="GtkHeaderBar" id="headerbar">
         <property name="visible">True</property>
         <property name="can-focus">False</property>
-        <property name="title">Manjaro Hello</property>
+        <property name="title">Antergos NeXT Hello</property>
         <property name="show-close-button">True</property>
         <child>
           <object class="GtkButton" id="about">
@@ -604,18 +607,19 @@ We, the Manjaro Developers, hope that you will enjoy using Manjaro as much as we
     <property name="title" translatable="yes">About</property>
     <property name="type-hint">dialog</property>
     <property name="transient-for">window</property>
-    <property name="program-name">Manjaro Hello</property>
+    <property name="program-name">Antergos NeXT Hello</property>
     <property name="version">0.8.1</property>
-    <property name="comments" translatable="yes">Welcome screen for Manjaro</property>
-    <property name="website">https://gitlab.manjaro.org/applications/manjaro-hello</property>
-    <property name="website-label">GitLab</property>
+    <property name="comments" translatable="yes">Welcome screen for Antergos NeXT</property>
+    <property name="website">https://github.com/Antergos-NeXT/antergos-welcome</property>
+    <property name="website-label">GitHub</property>
     <property name="authors">Hugo Posnic
 Johnathan Jenkins
 Frede Hundewadt
 Bernhard Landauer
 Philip Müller
 Papa Joker
-Oguz Kagan EREN</property>
+Oguz Kagan EREN
+Celestia Ludenberg</property>
     <property name="translator-credits">abdelhak gasmi
 Al Manja
 Albert Cutrona

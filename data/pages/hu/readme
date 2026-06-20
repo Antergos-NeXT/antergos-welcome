@@ -1,31 +1,31 @@
 <big>Hardverkezelés</big>
 
-A Manjaro nem csak több kernel használatát biztosítja (kiválasztható rendszerindításkor, hogy melyik kernellel induljon), hanem a legújabb (bleeding edge) kernelekhez is hozzáférést biztosít. Ez a Kernelek rész használatával érhető el a Manjaro Settings Managerben, vagy a parancssorban az MHWD-kernel parancssal.
+A Antergos NeXT nem csak több kernel használatát biztosítja (kiválasztható rendszerindításkor, hogy melyik kernellel induljon), hanem a legújabb (bleeding edge) kernelekhez is hozzáférést biztosít. Ez a Kernelek rész használatával érhető el a Antergos NeXT Settings Managerben, vagy a parancssorban az MHWD-kernel parancssal.
 
-Ezek a Manjaro eszközök az újonnan telepített kernellel együtt automatikusan frissítik a modulokat, amiket a régi kernellel használsz. Például, ha a 3.18-as kernelről a 4.1-esre frissítesz, az mhwd-kernel automatikusan telepíti a 4.1-es verzióját azoknak a moduloknak, amit a 3.18-al használtál.
+Ezek a Antergos NeXT eszközök az újonnan telepített kernellel együtt automatikusan frissítik a modulokat, amiket a régi kernellel használsz. Például, ha a 3.18-as kernelről a 4.1-esre frissítesz, az mhwd-kernel automatikusan telepíti a 4.1-es verzióját azoknak a moduloknak, amit a 3.18-al használtál.
 
-A Manjaro-t a Settings Manager hardverkezelés részében állíthatod hozzá a hardveredhez, vagy az MHWD (Manjaro Hardware Detector) parancssori alkalmazással. Ezekkel az eszközökkel például nyílt vagy zárt forráskódú grafikus drivereket tudsz telepíteni.
+A Antergos NeXT-t a Settings Manager hardverkezelés részében állíthatod hozzá a hardveredhez, vagy az MHWD (Antergos NeXT Hardware Detector) parancssori alkalmazással. Ezekkel az eszközökkel például nyílt vagy zárt forráskódú grafikus drivereket tudsz telepíteni.
 
 <big>Segítségkérés</big>
 
-Habár a Manjaro úgy lett tervezve, hogy "out of the box" működjön amennyire csak lehet, azt nem állítjuk, hogy tökéletes. Lehet, hogy valami probléma merül fel, vagy csak kérdéseid vannak, és többet szeretnél megtudni, esetleg személyre szeretnéd szabni, hogy minél jobban megfeleljen az elvárásaidnak. Ez az oldal felsorol néhány lehetőséget a segítségkérésre.
+Habár a Antergos NeXT úgy lett tervezve, hogy "out of the box" működjön amennyire csak lehet, azt nem állítjuk, hogy tökéletes. Lehet, hogy valami probléma merül fel, vagy csak kérdéseid vannak, és többet szeretnél megtudni, esetleg személyre szeretnéd szabni, hogy minél jobban megfeleljen az elvárásaidnak. Ez az oldal felsorol néhány lehetőséget a segítségkérésre.
 
 <b>Keress a weben</b>
 
-Az első lehetőség ismeret szerzésére a kedvenc internetes keresőd használata. Használd a 'Linux', 'Manjaro', vagy 'Arch' kifejezéseket a keresésedben.
+Az első lehetőség ismeret szerzésére a kedvenc internetes keresőd használata. Használd a 'Linux', 'Antergos NeXT', vagy 'Arch' kifejezéseket a keresésedben.
 
-Mivel a Manjaro az Arch Linuxon alapul, az Arch-hoz írt leírások, útmutatók, vagy tippek általában működnek a Manjaroval is.
+Mivel a Antergos NeXT az Arch Linuxon alapul, az Arch-hoz írt leírások, útmutatók, vagy tippek általában működnek a Antergos NeXTval is.
 
 <b>Nézz be a fórumra</b>
 
-A Manjaro-val kapcsolatban való segítségkéréshez van saját fórumunk, ahol különböző témákban kereshetsz, vagy kérdezhetsz. Valószínűleg ez a második legjobb hely a közreműködéshez, beszélgetéshez, vagy segítségkéréshez. Kérj segítséget, mondd el gondolataidat, vagy adj ötleteket. Csak bátran!
+A Antergos NeXT-val kapcsolatban való segítségkéréshez van saját fórumunk, ahol különböző témákban kereshetsz, vagy kérdezhetsz. Valószínűleg ez a második legjobb hely a közreműködéshez, beszélgetéshez, vagy segítségkéréshez. Kérj segítséget, mondd el gondolataidat, vagy adj ötleteket. Csak bátran!
 
-A Manjaro fórum több részlegre van osztva különböző témákhoz, kérlek, a megfelelő helyre írj!
-(A Manjaro fórumának jelenleg nincs magyar nyelvű részlege, viszont ha elég kérés érkezik, igényelni fogom létrehozását. Addig az "Other Languages" részlegbe lehet írni magyarul. (a fordító))
+A Antergos NeXT fórum több részlegre van osztva különböző témákhoz, kérlek, a megfelelő helyre írj!
+(A Antergos NeXT fórumának jelenleg nincs magyar nyelvű részlege, viszont ha elég kérés érkezik, igényelni fogom létrehozását. Addig az "Other Languages" részlegbe lehet írni magyarul. (a fordító))
 
 <b>Csatlakozz hozzánk IRC-n (Internet Relay Chat)</b>
 
-Csatlakozz a #manjaro csatornához a chat.freenode.net szerveren.
+Csatlakozz a #Antergos-NeXT csatornához a chat.freenode.net szerveren.
 
 <b>Iratkozz fel egy levelezési listára.</b>
 
@@ -33,15 +33,15 @@ További módja a segítségkérésnek egy levelezési listára való feliratkoz
 
 <big>Egyéb lehetőségek</big>
 
-    - <a href="http://forum.manjaro.org">Manjaro Forum</a> - Hivatalos német nyelvű támogatás.
-    - <a href="https://wiki.manjaro.org">Manjaro Wiki</a> - A Manjaro Linux hivatalos wikije.
+    - <a href="https://github.com/Antergos-NeXT/antergos-iso/discussions">Antergos NeXT Forum</a> - Hivatalos német nyelvű támogatás.
+    - <a href="https://github.com/Antergos-NeXT/antergos-iso/wiki">Antergos NeXT Wiki</a> - A Antergos NeXT hivatalos wikije.
     - <a href="http://wiki.archlinux.org">Arch Wiki</a> - Az Arch Linux hivatalos wikije.
     - <a href="https://aur.archlinux.org">AUR Tároló</a> - Extra szoftverek, amik nincsenek benne a hivatalos tárolókban.
 
 <big>Ötletek</big>
 
-Van egy ötleted, hogyan tehetnénk a Manjarot jobbá? Találtál valamit, amit szeretnél, hogy beletegyünk, esetleg segítenél valamiben? Szólj nekünk: írj le egy ötletet a főrumon, vagy IRC-n.
+Van egy ötleted, hogyan tehetnénk a Antergos NeXTt jobbá? Találtál valamit, amit szeretnél, hogy beletegyünk, esetleg segítenél valamiben? Szólj nekünk: írj le egy ötletet a főrumon, vagy IRC-n.
 
 Köszönjük!
 
-Reméljük, élvezni fogod a Manjaro használatát.
+Reméljük, élvezni fogod a Antergos NeXT használatát.

@@ -1,30 +1,18 @@
-manjaro-hello
+antergos-welcome
 =============
 
-A tool providing access to documentation and support for new Manjaro users.
+A tool providing access to documentation and support for new Antergos NeXT users.
 
-## What is Manjaro Hello?
+## What is Antergos Welcome?
 
-Manjaro-hello is widely inspired by [manjaro-welcome](https://github.com/manjaro/manjaro-welcome).
-Currently, manjaro-hello has all the major features of manjaro-welcome plus a translation system.
+Antergos-welcome is a fork of Manjaro Hello, adapted for Antergos NeXT.
 - Interface is translated using gettext and po files (po/).
-- Pages are translated using differents files (data/pages).
-
-## What goals ?
-
-The goal of the project is to build a powerful user interface that allows the user to discover his favorite distribution :).
+- Pages are translated using different files (data/pages).
 
 ## Technologies
 
-Manjaro-hello is build with Python, Gtk3 and Glade.
+Antergos-welcome is built with Python, Gtk3 and Glade.
 
-## TODO
+## License
 
-- Make more translations to distribute it in all the world.
-
-## Links
-
-- [Discussion from Manjaro's forum](https://forum.manjaro.org/t/start-work-on-a-new-welcome-screen-for-manjaro/13685)
-- [Translation project for Manjaro-Hello](https://www.transifex.com/manjarolinux/manjaro-hello)
-
-Let's make a wonderful software !
+GNU GPLv3

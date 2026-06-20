@@ -1,0 +1,9 @@
+[Desktop Entry]
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;System;
+StartupNotify=false
+Name=Antergos NeXT Welcome
+Exec=/usr/bin/antergos-welcome
+Icon=antergos-next
+Comment=A tool providing access to documentation and support for new Antergos NeXT users.

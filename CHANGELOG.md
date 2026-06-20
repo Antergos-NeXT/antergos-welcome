@@ -184,7 +184,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - Update translations.
-- Update release notes for Manjaro 17.
+- Update release notes for Antergos NeXT 17.
 
 ### Fixed
 - GitHub label.
@@ -206,7 +206,7 @@ All notable changes to this project will be documented in this file.
 - Update translations.
 
 ### Fixed
-- Start calamares using pkexec. [0db569c](https://github.com/manjaro/manjaro-hello/commit/0db569cd79dbeae127e94f0385f0909ee6c0c694)
+- Start calamares using pkexec. [0db569c](https://github.com/manjaro/antergos-welcome/commit/0db569cd79dbeae127e94f0385f0909ee6c0c694)
 
 ## [0.4.7] - 2017-01-14
 ### Added
@@ -225,7 +225,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 - Language labels in English.
-- 'Build Manjaro' label to 'Development'.
+- 'Build Antergos NeXT' label to 'Development'.
 - Update translations.
 
 ### Fixed

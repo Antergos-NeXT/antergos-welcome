@@ -1,2 +1,2 @@
-__all__ = ["manjaro_hello"]
+__all__ = ["antergos_welcome"]
 __version__ = "0.8.0"

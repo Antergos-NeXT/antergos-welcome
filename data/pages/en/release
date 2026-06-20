@@ -1,47 +1,11 @@
-<big>Manjaro 26.1</big>
+<big>Antergos NeXT Live ISO</big>
 
-Since we released Anh-Linh in January 2026 we worked hard to get the next release of Manjaro out there. We call it Bian-May.
+This is a live ISO of Antergos NeXT, the community revival of the classic Antergos distribution.
 
-The <big>GNOME edition</big> has received several updates to Gnome 50 series. This includes a lot of fixes and polish when <a href="https://release.gnome.org/50/">Gnome 50</a> originally was released in March 2026. You can find find release dates of each upcoming point-release here: <a href="https://release.gnome.org/calendar/">Release Calendar</a>. Weekly updates around GNOME can be found <a href="https://thisweek.gnome.org/">here</a>.
+Built on Arch Linux with the latest kernel, featuring:
+- <b>Cnchi</b> — the official GTK4 graphical installer
+- <b>Calamares</b> — alternative installer
+- <b>GNOME</b> desktop environment (latest stable)
+- Pre-configured for a smooth installation experience
 
-Highlights of 50 release series are:
-
-GNOME's parental controls have made a massive leap forward in GNOME 50. For the first time it is now possible for parents and guardians to monitor screen time and set limits for child accounts, including bedtime schedules. The new features allow automatically locking the screen when a screen limit or bedtime is reached. Parents and guardians also have the ability to extend screen time past the limit when needed. We also ship <a href="https://github.com/biglinux/big-parental-controls">Big Parental Controls 1.0</a> from our sister-project <a href="https://www.biglinux.com.br/">Big Linux</a> from Brazil, to comply with recent laws there.
-
-GNOME's built-in remote desktop capabilities have seen significant improvements in version 50. A major performance boost comes from new hardware acceleration support (using Vulkan and VA-API). By using your computer's graphics processor to stream video, remote sessions are now significantly smoother with much less lag and lower power consumption. Compatibility has also been improved for a wider range of hardware with the integration of explicit sync, which provides a more stable experience for those using NVIDIA drivers.
-
-GNOME's display technologies have received a massive set of stability and performance updates in GNOME 50.
-
-Improved Variable Refresh Rate (VRR) and Fractional Scaling Support: VRR and fractional scaling have both been improved for GNOME 50, with bug fixes, stability, and user experience improvements. For users with compatible monitors, VRR provides a tear-free experience where the display’s refresh rate matches the application's frame rate, resulting in significantly smoother motion. Fractional scaling allows what is displayed on screen to be scaled in increments, to better suit a range of display densities. When it is enabled, users can natively select scales like 125% or 150% in the display settings.
-
-Low-Latency Cursor in VRR: The mouse cursor now operates independently of the application's frame rate while VRR is active. This ensures the cursor remains fluid and responsive at the monitor’s maximum refresh rate (e.g., 144Hz) even if a game or professional app is running at a lower frame rate.
-
-NVIDIA Performance Boosts: Workarounds for NVIDIA driver quirks have been implemented, targeting stuttering and frame-timing issues. The result is noticeably smoother window animations and general desktop fluidity for users with NVIDIA GPUs.
-
-Next-Gen Color Management: Support for version 2 of the Wayland color management protocol has landed. This provides the technical foundation for creative professionals to achieve higher color accuracy across different apps and hardware.
-
-HDR Screen Sharing: Building on GNOME's modern color pipeline, it's now possible to screen share monitors displaying High Dynamic range (HDR) content. This allows screen recording software to record the screen content with the same vivid colors as displayed on the physical screen.
-
-The <big>Plasma edition</big> comes with the latest <a href="https://kde.org/announcements/plasma/6/6.6.4/">Plasma 6.6 series</a>, <a href="https://kde.org/announcements/frameworks/6/6.25.0/">Frameworks 6.25</a> and <a href="https://kde.org/announcements/gear/26.04.0/">KDE Gear 26.04</a>. It brings exciting new improvements to your desktop.
-
-Plasma 6.6 includes a number of highly-requested features:
-
-Plasma makes your life as easy as possible, without sacrificing the flexibility or features that have made Plasma the most versatile desktop in the known universe. With that in mind, Plasma’s usability and accessibility got improved, and practical new features were added into the mix.
-
-Those who like tailoring the look and feel of their environment can now turn their current setup into a new global theme! This custom global theme can be used for the day and night theme switching feature.
-
-If you have colorblindness, check out the filters on System Settings’ Accessibility page, under Color Blindness Correction. Plasma 6.6 adds a new grayscale filter, bringing the total to four filters that account for different kinds of colorblindness.
-
-Speaking of accessibility, Spectacle can now recognize and extract text from images it scans. Among other use cases, this makes it easy to write alt texts for visually-impaired users.
-
-With Plasma Setup, the technical steps of operating system installation and disk partitioning can be handled separately from user-facing steps like setting up an account, connecting to a network, and so on.
-
-With our <big>XFCE edition</big>, we have now Xfce 4.20. Here some highlights: A new file highlighting feature (accessed from the file properties dialog) in Thunar file manager lets you set a custom colour background and a custom foreground text colour – an effective way to call attention to specific file(s) in a directory laden with similar-looking mime types. On the subject of finding files, Thunar includes recursive search.
-
-The panel picks up a pair of new preferences. First, panel length is now configured in pixels rather than percentages, as before. Second, there’s a new “keep panel above windows” option. This allows maximised app windows to fill the area behind the panel rather than maximise its bottom or top edge to sit flush against it.
-
-Control Centre groups all of the desktop’s various modules for managing the system into one easy-to-use window. New options are present in many of these. For example you can disable header bars in dialogs from the Appearance module; show or hide a ‘delete’ option in file context menus from Desktop; and pick a default multi-monitor behaviour before you attach an additional screen – dead handy, that.
-
-Kernel 7.0 is used for this release, such as the latest drivers available to date. With 6.18 LTS and 6.12 LTS we offer additional support for older hardware as needed.
-
-We hope you enjoy this release and let us know what you think of Bian-May.
+Choose "Launch Cnchi Installer" to begin installing Antergos NeXT to your system.

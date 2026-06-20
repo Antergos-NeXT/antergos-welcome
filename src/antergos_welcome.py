@@ -16,8 +16,8 @@ import webbrowser
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk, GdkPixbuf, Gdk
 
-_SHARE_MANJARO = "/usr/share/manjaro"
-_HELLO_DATA_DIR = f"{_SHARE_MANJARO}/manjaro-hello"
+_SHARE_ANTERGOS = "/usr/share/antergos-next"
+_HELLO_DATA_DIR = f"{_SHARE_ANTERGOS}/antergos-welcome"
 _HELLO_PREF_FILE = f"{_HELLO_DATA_DIR}/preferences.json"
 
 
@@ -100,7 +100,7 @@ class EmbedBrowser(Embed):
             from application_utility.browser import data
             from application_utility.config.hello_config import HelloConfig
             try:
-                conf = HelloConfig(application="manjaro-hello")
+                conf = HelloConfig(application="antergos-welcome")
                 grid = Gtk.Grid()
                 grid.set_margin_start(5)
                 grid.set_margin_end(5)
@@ -129,8 +129,8 @@ class Hello(Gtk.Window):
     """Hello"""
 
     def __init__(self):
-        Gtk.Window.__init__(self, title="Manjaro Hello", border_width=6)
-        self.app = "manjaro-hello"
+        Gtk.Window.__init__(self, title="Antergos NeXT Welcome", border_width=6)
+        self.app = "antergos-welcome"
         screen = Gdk.Screen.get_default()
 
         self.dev = "--dev" in sys.argv
@@ -216,17 +216,13 @@ class Hello(Gtk.Window):
         self.builder.get_object("autostart").set_active(self.autostart)
 
         # Live systems
-        if (os.path.exists(self.preferences["live_path"]) and
-                os.path.isfile(self.preferences["installer_path"])):
+        if (os.path.exists(self.preferences["live_path"])):
             # show install label
             self.builder.get_object("installlabel").set_visible(True)
             # show install button
             self.builder.get_object("install").set_visible(True)
-            # check if manjaro system rescue is installed
-            if (os.path.exists(self.preferences["live_path"]) and
-                    os.path.isfile(self.preferences["rescue_path"])):
-                # show grub-rescue button
-                self.builder.get_object("rescue").set_visible(True)
+            # show calamares alternative installer
+            self.builder.get_object("calamares").set_visible(True)
         # Installed systems
         else:
             manager = EmbedManager(EmbedBrowser(), EmbedLayouts())
@@ -390,9 +386,9 @@ class Hello(Gtk.Window):
         """Event for differents actions."""
         name = action.get_name()
         if name == "install":
-            subprocess.Popen(["calamares_polkit"])
-        elif name == "rescue":
-            subprocess.Popen(["manjaro-rescue"])
+            subprocess.Popen(["sudo", "-E", "cnchi"])
+        elif name == "calamares":
+            subprocess.Popen(["sudo", "-E", "calamares"])
         elif name == "autostart":
             self.set_autostart(action.get_active())
         elif name == "about":
@@ -480,7 +476,7 @@ def get_lsb_infos():
                     lsb[var] = arg.strip('"')
     except (OSError, KeyError) as error:
         print(error)
-        return 'not Manjaro', '0.0'
+        return 'not Antergos NeXT', '0.0'
     return lsb["CODENAME"], lsb["RELEASE"]
 
 def get_icon_image(icon_name, icon_size):

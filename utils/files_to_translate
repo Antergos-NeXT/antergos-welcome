@@ -1,2 +1,2 @@
-../ui/manjaro-hello.glade
-../src/manjaro_hello.py
+../ui/antergos-welcome.glade
+../src/antergos_welcome.py

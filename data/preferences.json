@@ -1,6 +1,6 @@
 {
     "autostart_path": "~/.config/autostart/antergos-welcome.desktop",
-    "data_path": "/usr/share/antergos-next/antergos-welcome",
+    "data_path": "/usr/share/antergos-next/antergos-welcome/data",
     "default_locale": "en",
     "desktop_path": "/usr/share/applications/antergos-welcome.desktop",
     "gnometour_path": "/usr/bin/gnome-tour",
@@ -11,8 +11,8 @@
     "plasmawelcome_path": "/usr/bin/plasma-welcome",
     "rescue_path": "",
     "save_path": "~/.config/antergos-welcome.json",
-    "style_path": "/usr/share/antergos-next/antergos-welcome/style.css",
-    "ui_path": "/usr/share/antergos-next/antergos-welcome/antergos-welcome.glade",
+    "style_path": "/usr/share/antergos-next/antergos-welcome/ui/style.css",
+    "ui_path": "/usr/share/antergos-next/antergos-welcome/ui/antergos-welcome.glade",
     "urls": {
         "development": "https://github.com/Antergos-NeXT",
         "donate": "",

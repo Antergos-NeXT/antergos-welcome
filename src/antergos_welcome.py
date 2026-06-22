@@ -146,7 +146,13 @@ class Hello(Gtk.Window):
             logging.debug(f"Using dev preferences: {self.preferences}")
         else:
             self.preferences = read_json(f"{_HELLO_PREF_FILE}")
+            if not self.preferences:
+                self.preferences = read_json(f"{_HELLO_DATA_DIR}/data/preferences.json")
             logging.debug(f"Using system preferences: {self.preferences}")
+
+        if not self.preferences:
+            logging.critical("Cannot find preferences.json — aborting")
+            sys.exit(1)
 
         # Get saved infos
         self.usr_prefs = read_json(self.preferences["save_path"])
@@ -521,7 +527,7 @@ def get_lsb_infos():
     except (OSError, KeyError) as error:
         print(error)
         return 'not Antergos NeXT', '0.0'
-    return lsb["CODENAME"], lsb["RELEASE"]
+    return lsb.get("CODENAME", "unknown"), lsb.get("RELEASE", "0.0")
 
 def get_icon_image(icon_name, icon_size):
     icon_theme = Gtk.IconTheme.get_default()

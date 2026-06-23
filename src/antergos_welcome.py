@@ -227,8 +227,7 @@ class Hello(Gtk.Window):
             self.builder.get_object("installlabel").set_visible(True)
             # show install button
             self.builder.get_object("install").set_visible(True)
-            # show calamares alternative installer
-            self.builder.get_object("calamares").set_visible(True)
+
         # Installed systems
         else:
             manager = EmbedManager(EmbedBrowser(), EmbedLayouts())

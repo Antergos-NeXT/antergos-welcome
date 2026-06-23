@@ -432,9 +432,6 @@ We, the Antergos NeXT Developers, hope that you will enjoy using Antergos NeXT a
                     <property name="fill">True</property>
                   </packing>
                 </child>
-                <child>
-    
-                </child>
               </object>
               <packing>
                 <property name="left-attach">0</property>

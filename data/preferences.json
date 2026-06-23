@@ -4,7 +4,7 @@
     "default_locale": "en",
     "desktop_path": "/usr/share/applications/antergos-welcome.desktop",
     "gnometour_path": "/usr/bin/gnome-tour",
-    "installer_path": "/usr/bin/calamares",
+    "installer_path": "/usr/bin/calamares-next",
     "live_path": "/run/miso/bootmnt/antergos-next",
     "locale_path": "/usr/share/locale",
     "logo_path": "/usr/share/icons/hicolor/64x64/apps/antergos-next.png",

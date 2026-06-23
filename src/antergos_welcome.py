@@ -438,7 +438,7 @@ class Hello(Gtk.Window):
         if name == "install":
             subprocess.Popen(["sudo", "-E", "cnchi"])
         elif name == "calamares":
-            subprocess.Popen(["sudo", "-E", "calamares"])
+            subprocess.Popen(["sudo", "-E", "calamares-next"])
         elif name == "autostart":
             self.set_autostart(action.get_active())
         elif name == "about":
@@ -524,10 +524,24 @@ def get_lsb_infos():
                         continue
                     var = var.replace("DISTRIB_","")
                     lsb[var] = arg.strip('"')
+        if lsb.get("CODENAME") and lsb.get("RELEASE"):
+            return lsb["CODENAME"], lsb["RELEASE"]
+    except (OSError, KeyError) as error:
+        print(error)
+
+    # Fall back to os-release
+    try:
+        with open("/usr/lib/os-release") as os_release:
+            for line in os_release:
+                if "=" in line:
+                    var, arg = line.rstrip().split("=")
+                    if not arg:
+                        continue
+                    lsb[var] = arg.strip('"')
+        return lsb.get("VERSION_CODENAME", "unknown"), lsb.get("VERSION_ID", "rolling")
     except (OSError, KeyError) as error:
         print(error)
         return 'not Antergos NeXT', '0.0'
-    return lsb.get("CODENAME", "unknown"), lsb.get("RELEASE", "0.0")
 
 def get_icon_image(icon_name, icon_size):
     icon_theme = Gtk.IconTheme.get_default()

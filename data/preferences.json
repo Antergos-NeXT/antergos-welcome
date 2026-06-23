@@ -5,7 +5,7 @@
     "desktop_path": "/usr/share/applications/antergos-welcome.desktop",
     "gnometour_path": "/usr/bin/gnome-tour",
     "installer_path": "/usr/bin/calamares-next",
-    "live_path": "/run/miso/bootmnt/antergos-next",
+    "live_path": "/run/archiso/bootmnt",
     "locale_path": "/usr/share/locale",
     "logo_path": "/usr/share/icons/hicolor/64x64/apps/antergos-next.png",
     "plasmawelcome_path": "/usr/bin/plasma-welcome",

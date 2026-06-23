@@ -3,9 +3,14 @@
 This is a live ISO of Antergos NeXT, the community revival of the classic Antergos distribution.
 
 Built on Arch Linux with the latest kernel, featuring:
-- <b>Cnchi</b> — the official GTK4 graphical installer
-- <b>Calamares</b> — alternative installer
+- <b>Calamares</b> — the official installer (offline + online modes)
 - <b>GNOME</b> desktop environment (latest stable)
 - Pre-configured for a smooth installation experience
 
-Choose "Launch Cnchi Installer" to begin installing Antergos NeXT to your system.
+Choose "Install Antergos NeXT" to begin installing to your system.
+
+<b>🕯️ A note on Cnchi</b>
+
+The original Antergos installer (Cnchi) has been retired. It was briefly revived for NeXT as a GTK4 port, but proved too unstable and maintenance-heavy to carry forward. Calamares is now the sole installer — mature, upstream-supported, and more capable than Cnchi ever was. This was not an easy decision, but the right one.
+
+<i>Requiescat in pace, Cnchi. 2012–2026.</i>

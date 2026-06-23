@@ -3,7 +3,7 @@
 Welcome to Antergos NeXT! This live environment lets you try out the system before installing.
 
 <b>Launch the installer</b>
-Click "Launch Cnchi Installer" on the welcome screen to start the graphical installation process. You can also use the "Alternative Installer" button to launch Calamares.
+Click "Install Antergos NeXT" on the welcome screen to start the Calamares installer. You can choose between offline (no internet needed) and online (8 DE choices) installation modes.
 
 <b>Search the web</b>
 Antergos NeXT is based on Arch Linux, so most Arch guides and tips apply here too.
@@ -11,7 +11,9 @@ Antergos NeXT is based on Arch Linux, so most Arch guides and tips apply here to
 <b>Get involved</b>
 Found a bug? Want a feature? Visit us on GitHub:
 - <a href="https://github.com/Antergos-NeXT/antergos-iso">Antergos NeXT ISO</a>
-- <a href="https://github.com/Antergos-NeXT/cnchi-next">Cnchi Installer</a>
 - <a href="https://github.com/Antergos-NeXT/antergos-packages">Packages</a>
+
+<b>🕯️ Cnchi has been retired</b>
+The original Antergos GTK4 installer was too unstable to maintain. Calamares is now the sole installer — more capable, upstream-supported, and ready for the future.
 
 Thank you for trying Antergos NeXT!

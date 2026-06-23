@@ -250,7 +250,7 @@ class Hello(Gtk.Window):
         self.setup_mute_button()
 
     def play_welcome_song(self):
-        song = "/usr/share/cnchi-memes/its-raining-tacos.opus"
+        song = "/usr/share/antergos-next-memes/its-raining-tacos.opus"
         self.mpv_process = None
         if os.path.isfile(song):
             try:
@@ -436,8 +436,6 @@ class Hello(Gtk.Window):
         """Event for differents actions."""
         name = action.get_name()
         if name == "install":
-            subprocess.Popen(["sudo", "-E", "cnchi"])
-        elif name == "calamares":
             subprocess.Popen(["sudo", "-E", "calamares-next"])
         elif name == "autostart":
             self.set_autostart(action.get_active())

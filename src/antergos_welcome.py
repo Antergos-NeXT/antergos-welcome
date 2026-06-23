@@ -14,7 +14,7 @@ import sys
 import webbrowser
 
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk, GdkPixbuf, Gdk
+from gi.repository import Gtk, GdkPixbuf, Gdk, GLib
 
 _SHARE_ANTERGOS = "/usr/share/antergos-next"
 _HELLO_DATA_DIR = f"{_SHARE_ANTERGOS}/antergos-welcome"
@@ -227,6 +227,7 @@ class Hello(Gtk.Window):
             self.builder.get_object("installlabel").set_visible(True)
             # show install button
             self.builder.get_object("install").set_visible(True)
+            GLib.timeout_add_seconds(5, self.auto_launch_installer)
 
         # Installed systems
         else:
@@ -426,6 +427,13 @@ class Hello(Gtk.Window):
         except OSError:
             return _("Can't load page.")
 
+    def auto_launch_installer(self):
+        if not os.path.exists(self.preferences["live_path"]):
+            return False
+        self.window.hide()
+        subprocess.Popen(["sudo", "-E", "calamares-next"])
+        return False
+
     # Handlers
     def on_languages_changed(self, combobox):
         """Event for selected language."""
@@ -435,6 +443,7 @@ class Hello(Gtk.Window):
         """Event for differents actions."""
         name = action.get_name()
         if name == "install":
+            self.window.hide()
             subprocess.Popen(["sudo", "-E", "calamares-next"])
         elif name == "autostart":
             self.set_autostart(action.get_active())
